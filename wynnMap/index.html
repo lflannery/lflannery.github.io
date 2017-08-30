@@ -33,8 +33,9 @@
 
      map.on('click', function(e) {
   var features = map.queryRenderedFeatures(e.point, {
-    layers: ['wynn-roadwork'] // replace this with the name of the layer
+    layers: ['wynn-roadwork'] ['wynn-boston'] // replace this with the name of the layer
   });
+
 
   if (!features.length) {
     return;
