@@ -9,6 +9,9 @@ body {
 	width: 200px;
 	margin: 8px;
 }
+.Service-Image {
+	width:100px;
+}
 #slogan {
 	font-style: italic;
 	font-size:24px;
