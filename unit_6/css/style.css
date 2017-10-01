@@ -1,0 +1,95 @@
+
+@import url('https://fonts.googleapis.com/css?family=Raleway|Ubuntu');
+
+* {
+	margin: 0;
+} 
+body {
+	background: #000;
+	color:#fff;
+	font-family: 'Raleway', sans-serif;
+}
+nav {
+	padding: 20px;
+}
+nav ul {
+	text-align: right;
+}
+nav ul li{
+	display: inline;
+	padding: 0 2em;
+	font-family: 'Ubuntu', sans-serif;
+}
+a{
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+a:hover{
+	color: #d3d3d3;
+	text-decoration: underline;
+}
+h1 {
+	color: #ffd200;
+	font-size: 3em;
+	font-weight: 500;
+	font-family: 'Ubuntu', sans-serif;
+}
+h2 {
+	text-transform: uppercase;
+	font-family: 'Ubuntu', sans-serif;
+	padding:1em;
+}
+footer {
+	border-top: 1px solid #ddd;
+	clear: both;
+}
+div, section {
+	text-align: center;
+	margin: 0 auto;
+}
+.Header-Detail {
+	background: center no-repeat url('../images/hero.jpg');
+	height: 600px;
+}
+.Service-Image {
+	width:100px;
+}
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+#panel1 {
+	width: 800px;
+}
+#panel2 .Column {
+	float: left;
+	width: 20%;
+	padding: 2%;
+}
+#panel3 .Column {
+	float: left;
+	width: 30%;
+	padding: 1%;
+}
+#slogan {
+	font-style: italic;
+	font-size:36px;
+	font-weight: 500;
+}
+
+#left {
+	padding: 20px;
+    float: left;
+    width: 15%;
+}
+
+#right {
+    float: right;   
+	width: 75%;
+	line-height: 4em;
+}
