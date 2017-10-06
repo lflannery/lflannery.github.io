@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title>Instant Login</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <base href="https://bpbtcma.secure.fundsxpress.com">
+        <style>
+            *, *:before, *:after { box-sizing: border-box; }
+            html, body { margin: 0; padding: 0; background-color: transparent; color: #000; }
+            .input { 
+                width: 100%;
+                padding: 9px 10px;
+                border: 1px solid #003056;
+                font-family: benton-sans,sans-serif;
+                line-height: normal;
+                font-size: 100%;
+                margin: 0;
+                vertical-align: baseline;
+            }
+            .label {
+                display: block;
+                margin-bottom: 4px;
+                color: #63656a;
+            }
+            .button {
+                margin: 1.3em .5em .2em 0;
+                padding: 0;
+                background-color: #cc992b;
+                color: #003056;
+                border: none;
+                width: 150px;
+                height: 40px;
+                cursor: pointer;
+                font-weight: bold;
+                font-size: 16px;
+                text-align: center;
+            }
+            .field { 
+                margin: 0 0 1rem;
+            }
+           
+            
+            @media (min-width : 300px) {
+                .field-group { display: block; }
+            }
+        </style>
+    </head>
+    <body>
+        <form action="https://bpbtcma.secure.fundsxpress.com/start/BPBTCMA" method="POST" autocomplete="OFF" target="_top" id="loginForm" name="InstantLogin" class="login">
+            <input type="hidden" name="sssid" value="login#2#1d41f13bf24d93b9#50eef13f56ab5eaa391d318d49f463fb2cafb732c07b73ed8490d90e77c7440e666555b4bb4f0e3e1864b16aaf9229366a7cfb4879f688a9">
+            <input type="hidden" name="iid" value="BPBTCMA">
+            <div class="field-group">
+                <div class="field">
+                    <label class="Label" for="aid">Access ID</label>
+                    <input id="aid" class="input" type="text" tabindex="1" size="15" name="aid">
+                </div>
+                <div class="field">
+                    <label class="Label" for="passcode">Passcode</label>
+                    <input id="passcode" class="input" type="password" tabindex="2" size="15" name="passcode">
+                </div>
+                <div class="field">
+                    <input class="button"  name="submit" value="Login" tabindex="3">
+                </div>
+            </div>
+        </form>
+    </body>
+</html>
