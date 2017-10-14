@@ -125,17 +125,13 @@ div, section {
 	.Footer-Nav li {
 		margin: 0 3em 0 0;
 	} 
-	#panel2 .Column {
-		flex: 1 1 100%;
-	}
-	#panel3 .Column {
+	#panel2 .Column, #panel3 .Column {
 		flex: 1 1 100%;
 	}
 	#left {
 		float: none;
 		width: 30%;
 	}
-	
 	#right {
 		float: none;   
 		line-height: 2em;
