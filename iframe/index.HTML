@@ -10,15 +10,6 @@
                 font-size: 15px;
                 line-height: 21px;
             }
-            .Label {
-                display: inline-block;
-                font-weight: 600;
-                margin-bottom: .5rem;   
-            }
-            .required .Label:after{
-                content: " *";
-                color: #af272f;
-            }
             input { 
                 width: 100%;
                 padding: 9px 10px;
@@ -26,9 +17,9 @@
                 height: 40px;
                 font-size: 100%;
             }
-            input:focus {
-                outline: none;
-                border: 2px solid #5b7f95;
+            input:focus {
+                outline: none;
+                border: 2px solid #5b7f95;
             }
             button { 
                 font-weight: 600;
@@ -44,6 +35,16 @@
                 border: 0;
                 line-height: normal;
                 margin: 0!important;
+            }
+            .Label {
+                display: inline-block;
+                font-weight: 600;
+                color: #333;
+                margin-bottom: .5rem;   
+            }
+            .required .Label:after{
+                content: " *";
+                color: #af272f;
             }
             .button:after {
                 position: absolute;
