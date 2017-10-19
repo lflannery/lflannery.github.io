@@ -1,0 +1,83 @@
+<html>
+        <head>
+        <title>Instant Login</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <base href="https://bpbtcma.secure.fundsxpress.com">
+        <style>
+            form { 
+                font-family: Open Sans;
+                font-size: 15px;
+                line-height: 21px;
+            }
+            .Label {
+                display: inline-block;
+                font-weight: 600;
+                margin-bottom: .5rem;   
+            }
+            .required .Label:after{
+                content: " *";
+                color: #af272f;
+            }
+            input { 
+                width: 100%;
+                padding: 9px 10px;
+                border: 1px solid #5b7f95;
+                height: 40px;
+                font-size: 100%;
+            }
+            button { 
+                font-weight: 600;
+                font-size: 1.25em;
+                position: relative;
+                display: inline-block;
+                padding: .25rem 2.5rem .25rem .75rem;
+                cursor: pointer;
+                text-align: center;
+                text-decoration: none;
+                color: #003056;
+                background-color: #cc992b;
+                border: 0;
+                line-height: normal;
+                margin: 0!important;
+            }
+            .button:after {
+                position: absolute;
+                right: 1.25rem;
+                top: 50%;
+                transform: translateY(-50%);
+                content: "";
+                display: inline-block;
+                width: 1.25em;
+                height: 1.25em;
+                background: url('http://www.bostonprivate.stage1.getfused.com/assets/images/icons/round-arrow.svg') no-repeat 50%;
+                background-size: contain;
+                right: .5rem;
+            }
+            .field { 
+                margin: 0 0 1rem;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="https://bpbtcma.secure.fundsxpress.com/start/BPBTCMA" method="POST" autocomplete="OFF" target="_top" id="loginForm" name="InstantLogin" class="login">
+        <input type="hidden" name="sssid" value="login#2#6ca66421a52a53bb#df43a949a86b265412de3b0cc52bc9e57d59d07ddec2afcaf95dfb28c28f464256c7c0f021ac21dd1051c649ed5faad6a281468bfc2f2d63">
+        <input type="hidden" name="iid" value="BPBTCMA">
+            <div class="field-group">
+                <div class="field required">
+                    <label class="Label" for="aid">Access ID</label> 
+                    <input id="aid" class="input" type="text" placeholder="Access ID..." tabindex="1" size="15" name="aid">
+                </div>
+                <div class="field required">
+                    <label class="Label" for="passcode">Passcode</label> 
+                    <input id="passcode" class="input" type="password" placeholder="Passcode..." tabindex="2" size="15" name="passcode">
+                </div>
+                <div class="field">
+                    <button class="button" name="submit" type="submit" tabindex="3">
+                        <span class="Button-Text">Send</span>
+                    </button>
+                </div>
+            </div>
+        </form>
+    </body>
+    </html>
