@@ -1,0 +1,231 @@
+
+@import url('https://fonts.googleapis.com/css?family=Raleway|Ubuntu');
+
+* {
+	margin: 0;
+} 
+body {
+	background: #000;
+	color:#fff;
+	font-family: 'Raleway', sans-serif;
+}
+nav {
+	padding: 1%;
+}
+nav ul {
+	text-align: right;
+}
+nav ul li{
+	display: inline;
+	padding: 0 2em;
+	font-family: 'Ubuntu', sans-serif;
+}
+a{
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+a:hover{
+	color: #d3d3d3;
+	text-decoration: underline;
+}
+h1 {
+	color: #ffd200;
+	font-size: 3em;
+	font-weight: 500;
+	font-family: 'Ubuntu', sans-serif;
+}
+h2 {
+	text-transform: uppercase;
+	font-family: 'Ubuntu', sans-serif;
+	padding:1em;
+}
+h3 {
+	text-transform: uppercase;
+	padding: .25em;
+	font-weight: 700;
+}
+footer {
+	border-top: .1em solid #ddd;
+	clear: both;
+	margin: 1em 0;
+}
+div, section {
+	text-align: center;
+	margin: 0 auto;
+}
+Label {
+	color: #3d3d3d;
+	display: block;
+}
+.Button {
+	background: #ffd200;
+	color: #000;
+	font-weight: 600;
+	padding: .5em 1em;
+	border: none;
+	border-radius: .2em;
+	margin-bottom: 1em;
+}
+.required Label::after {
+	color: red;
+	content: "*";
+	font-size: 1.5em;
+}
+.Input {
+	border: .5px solid #3d3d3d;
+	margin: .5em;
+	padding: .5em
+}
+.Header-Detail {
+	background: center no-repeat url('../images/hero.jpg');
+	height: 45vw;
+}
+.Services .Header-Detail {
+	background: center no-repeat url('../images/Services.png');
+	background-size: contain;
+	height: 30vw;
+}
+.Service-Image {
+	max-width:45%;
+	margin: 0 25%;
+}
+.Map {
+	max-width: 70%;
+}
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+.TwoColumn, .ThreeColumn, .FourColumn {
+	display: inline-flex;
+}
+.TwoColumn .Column {
+	width: 50%;
+	margin: 2em 0 0 0;
+}
+.Home .Panel.One {
+	width: 80%;
+}
+.Panel.Two .Column {
+	flex: 1 1 22%;
+	padding: 2%
+}
+.Panel.Three .Column {
+	flex: 1 1 25%;
+}
+.Home .Panel.Three .Column img {
+	width: 70%;
+}
+.Services section div {
+	text-align: left;
+	margin-bottom: 8px;
+	padding: 0 1em;
+}
+.Services .ThreeColumn {
+	max-width: 95%;
+}
+.Services .Panel .Column {
+	flex: 1 1 30%;
+}
+.Services .Panel.Two .Column.One, .Services .Panel.Four .Column.One {
+	flex: 1 1 15%;
+}
+.Services .Panel.One .Column.Three, .Services .Panel.Three .Column.Three {
+	flex: 1 1 15%;
+}
+.Services .Panel.One, .Services .Panel.Three {
+	background: #ffd200;
+	color: #000
+}
+.Services .Service-Image {
+	max-width: 200px;
+	margin:0;
+	vertical-align: middle;
+}
+.Address {
+	background: #fff;
+	color: #3d3d3d;
+	font-weight: 600;
+	max-width: 70%;
+	margin: 0 auto;
+}
+.Form-Wrapper {
+	background: #fff;
+	max-width: 55%;
+	margin: 0 auto;
+}
+.Form-Wrapper h2 {
+	color: #3d3d3d
+}
+#slogan {
+	font-style: italic;
+	font-size:2.5em;
+	font-weight: 500;
+}
+#left {
+	padding: 1%;
+    float: left;
+    width: 15%;
+}
+#right {
+    float: right;   
+	width: 75%;
+	line-height: 4em;
+}
+
+@media only screen and (max-width:990px) {
+	.TwoColumn, .ThreeColumn, .FourColumn { 
+		flex-wrap: wrap;
+	}
+	.Panel .FourColumn .Column {
+		flex: 1 1 45%;
+	}
+}
+@media only screen and (max-width:750px) {
+	nav ul li{
+		list-style:none;
+		display: block;
+		text-align:center;
+		margin: 0 0 0 4em;
+	}
+	h1 {
+		font-size: 2.5em;
+	}
+	h2 {
+		font-size: 1.5em;
+	}
+	.Footer-Nav li {
+		margin: 0 3em 0 0;
+	}
+	.Panel .TwoColumn .Column, .Panel .ThreeColumn .Column, .Panel .FourColumn .Column {
+		flex: 1 1 100%;
+	}
+	.Services section div {
+		text-align: center;
+	}
+	ul {
+		list-style-position: inside;
+	}
+	.Services .Panel.One .ThreeColumn .Column.Three,.Services .Panel.Three .ThreeColumn .Column.Three {
+		order: 1;
+	}
+	.Services .Panel.One .ThreeColumn .Column.One,.Services .Panel.Three .ThreeColumn .Column.One {
+		order: 2;
+	}
+	.Services .Panel.One .ThreeColumn .Column.Two,.Services .Panel.Three .ThreeColumn .Column.Two {
+		order: 3;
+	}
+	#left {
+		float: none;
+		width: 30%;
+	}
+	#right {
+		float: none;   
+		line-height: 2em;
+	}
+}
