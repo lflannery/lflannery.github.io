@@ -300,9 +300,9 @@ div>.Column {
 }
 
 .Homepage .Header-Image-Text {
-    position: absolute;
+    position: relative;
     left: 2rem;
-    bottom: 1rem;
+    bottom: 13rem;
     max-width:800px;
 }
 
