@@ -438,12 +438,6 @@ div>.Column {
     text-decoration:none
 }
 
-.Footer {
-    padding: 1rem 0;
-    color: #fff;
-    background: #1F262B
-}
-
 .Logo {
     display: block;
     width: 300px
@@ -452,7 +446,6 @@ div>.Column {
 .Logo img {
     position: relative
 }
-
 
 .Header .Details:before,
 .Footer .Details:before {
@@ -480,6 +473,22 @@ div>.Column {
 
 .Footer {
     padding-bottom: 2rem
+}
+
+.Footer-Nav .Nav-Link {
+    color:#CFCFCF;
+    display: -ms-flexbox;
+    display:flex;
+    -ms-flex-pack: justify;
+    justify-content:space-between;
+    max-width:506px;
+}
+
+.Footer-Nav .Nav-Item+.Nav-Item .Nav-Link:before {
+    content: "|";
+    margin-right: .4rem;
+    position: absolute;
+    left: -.6rem;
 }
 
 .Credits {
