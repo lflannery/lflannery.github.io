@@ -301,26 +301,23 @@ div>.Column {
 .Homepage .Header-Image-Text {
     position: absolute;
     left: 2rem;
-    bottom: 15rem
+    bottom: 15rem;
     max-width:800px;
 }
 
-.Title {
-    padding: 0 .2em;
-}
 .Header-Text h1.Page-Title {
     font-size: 2em;
     font-weight:400;
     color:#2D3958;
 }
 .Hero-Caption {
-    background: ##0091ff;
-    color: ##fff;
+    background: #0091ff;
+    color: #fff;
     padding: .2em;
 }
 
 .Header {
-    color: ##353E40;
+    color: #353E40;
     background: none;
     z-index:100
 }
@@ -351,7 +348,7 @@ div>.Column {
     margin: 0 4rem;
 }
 .Header .Main-Nav .Nav-Item .Nav-Link {
-    color: ##353E40;
+    color: #353E40;
 }
 
 .Header-Image {
@@ -366,7 +363,7 @@ div>.Column {
 }
 
 .Nav-Item {
-    display: inline-block
+    display: inline-block;
     padding: 1rem 0;
     position: relative
 }
@@ -458,7 +455,7 @@ div>.Column {
 }
 .Header .Contact a,
 .Footer .Contact a {
-    color:##353E40;
+    color:#353E40;
 }
 
 .Footer {
