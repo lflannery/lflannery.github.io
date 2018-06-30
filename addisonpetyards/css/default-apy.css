@@ -312,9 +312,10 @@ div>.Column {
     max-width:800px;
 }
 
-.Header-Text .Page-Title {
+.Header-Text {
     font-size: 2em;
-    font-weight:400;
+}
+.Header-Text .Page-Title {
     color:#2D3958;
 }
 .Hero-Caption {
