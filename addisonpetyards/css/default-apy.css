@@ -312,7 +312,7 @@ div>.Column {
     max-width:800px;
 }
 
-.Header-Text h1.Page-Title {
+.Header-Text .Page-Title {
     font-size: 2em;
     font-weight:400;
     color:#2D3958;
