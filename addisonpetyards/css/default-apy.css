@@ -457,9 +457,19 @@ div>.Column {
     background-size: cover
 }
 
+.Header .Details:before,
+.Footer .Details:before {
+    background: url(/addisonpetyards/assets/img_location.svg) no-repeat 50%;
+    content: "";
+    display: inline-block;
+    width: 14px;
+    height: 20px;
+}
+
 .Header .Contact,
 .Footer .Contact {
     font: .8em/.95em 'Roboto',sans-serif;
+    margin-left:20px;
 }
 .Header .Contact span,
 .Footer .Contact span {
@@ -468,16 +478,6 @@ div>.Column {
 .Header .Contact a,
 .Footer .Contact a {
     color:#353E40;
-}
-
-.Header .Contact:before,
-.Footer .Contact:before {
-    background: url(/addisonpetyards/assets/img_location.svg) no-repeat 50%;
-    background-size:100%;
-    content: "";
-    display: inline-block;
-    width: 40px;
-    height: 40px;
 }
 
 .Footer {
