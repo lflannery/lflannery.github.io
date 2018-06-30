@@ -470,6 +470,16 @@ div>.Column {
     color:#353E40;
 }
 
+.Header .Contact:before,
+.Footer .Contact:before {
+    background: url(/assets/img_location.svg) no-repeat 50%;
+    background-size:100%;
+    content: "";
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+}
+
 .Footer {
     padding-bottom: 2rem
 }
