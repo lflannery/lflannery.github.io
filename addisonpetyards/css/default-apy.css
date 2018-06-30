@@ -315,13 +315,17 @@ div>.Column {
 .Header-Text {
     font-size: 2em;
 }
-.Header-Text .Page-Title {
-    color:#2D3958;
+
+.Hero-Title {
+    padding:0 .3em;
 }
+
 .Hero-Caption {
     background: #0091ff;
     color: #fff;
-    padding: .2em;
+    padding: .3em;
+    margin: .3em 0;
+    display:inline-block;
 }
 
 .Header {
