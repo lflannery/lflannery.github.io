@@ -486,9 +486,8 @@ div>.Column {
 
 .Footer-Nav .Nav-Item+.Nav-Item .Nav-Link:before {
     content: "|";
-    margin-right: .4rem;
-    position: absolute;
-    left: -.6rem;
+    border-right:1px solid #cfcfcf;
+    opacity:.25%;
 }
 
 .Credits {
