@@ -241,6 +241,7 @@ body {
 div>.Column {
     margin: .5rem;
     padding: 1rem
+    background:none;
 }
 
 .Field-Group,
@@ -301,7 +302,7 @@ div>.Column {
 .Homepage .Header-Image-Text {
     position: absolute;
     left: 2rem;
-    bottom: 15rem;
+    bottom: 1rem;
     max-width:800px;
 }
 
