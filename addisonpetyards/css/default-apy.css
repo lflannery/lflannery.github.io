@@ -240,7 +240,7 @@ body {
 
 div>.Column {
     margin: .5rem;
-    padding: 1rem;
+    padding: 0 1rem;
     background:none;
 }
 
@@ -302,7 +302,8 @@ div>.Column {
 }
 
 .Homepage .Content-Header {
-    margin-top: -85px;
+    margin-top: -95px;
+    height: 33vw;
 }
 
 .Homepage .Header-Image-Text {
@@ -364,7 +365,7 @@ div>.Column {
 }
 
 .Header-Image {
-    height: 33vh;
+    height: 33vw;
     background-size:cover
 }
 .Nav,
@@ -452,10 +453,6 @@ div>.Column {
     position: relative
 }
 
-.Header-Image {
-    height: 33vw;
-    background-size: cover
-}
 
 .Header .Details:before,
 .Footer .Details:before {
@@ -464,6 +461,7 @@ div>.Column {
     display: inline-block;
     width: 14px;
     height: 20px;
+    float:left;
 }
 
 .Header .Contact,
@@ -566,7 +564,7 @@ div>.Column {
 
 .Listing-Item {
     margin-bottom: .5rem;
-    padding: 1rem;
+    padding: .5rem;
     background:none;
 }
 
