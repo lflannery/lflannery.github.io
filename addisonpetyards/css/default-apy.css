@@ -475,6 +475,10 @@ div>.Column {
     padding-bottom: 2rem
 }
 
+.Footer-Nav .Nav-Item {
+    margin-right:1em;
+}
+
 .Footer-Nav .Nav-Link {
     color:#CFCFCF;
     display: -ms-flexbox;
