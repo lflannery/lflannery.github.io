@@ -563,7 +563,7 @@ div>.Column {
 }
 
 .Listing.Blog .Listing-Title {
-    color: ##0091FF;
+    color: #0091FF;
     font-weight: 700;
     font-size: 1.1em;
 }
@@ -574,16 +574,16 @@ div>.Column {
 }
 
 .Recent-Blog {
-    background: ##F4F6F5;
+    background: #F4F6F5;
 }
 .Recent-Blog a {
     font-size: .9em;
-    color: ##353E40;
+    color: #353E40;
 }
 
 .Recent-Blog .Page-Subtitle {
     font: 2em/1.1 'Roboto',sans-serif;
-    color: ##2D3958;
+    color: #2D3958;
     text-align:center;
     padding-top:1em;
     margin:0;
