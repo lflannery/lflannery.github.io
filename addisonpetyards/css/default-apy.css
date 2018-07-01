@@ -473,6 +473,7 @@ div>.Column {
 
 .Footer {
     padding-bottom: 2rem
+    color:#1F262B;
 }
 
 .Footer .Viewport {
@@ -482,11 +483,11 @@ div>.Column {
     justify-content: space-between;
     -ms-flex-align: center;
     align-items: center;
-    padding: 1.5rem;
 }
 
 .Footer-Nav .Nav-Item {
     margin-right:.7em;
+    padding-bottom:0;
 }
 
 .Footer-Nav .Nav-Link {
@@ -494,8 +495,7 @@ div>.Column {
     display: -ms-flexbox;
     display:flex;
     -ms-flex-pack: justify;
-    justify-content:space-between;
-    max-width:506px;
+    font-size:.9em;
 }
 
 .Footer-Nav .Nav-Item+.Nav-Item .Nav-Link:before {
@@ -508,10 +508,15 @@ div>.Column {
 .Footer .Form {
     font-size: .9rem;
     line-height: .9rem;
+    color: #CFCFD0;
 }
 
 .Footer .Form .ContentPage:first-child {
     margin-top: 0;
+}
+.Footer .Form .ContentPage h2 {
+    color: #CFCFCF;
+    font-size:1.1em;
 }
 
 .Footer .Form form {
@@ -573,18 +578,17 @@ div>.Column {
 
 .Button,
 .Download {
-    font-weight: 700;
+    font-weight: 400;
     display: inline-block;
-    margin: 1rem 0;
-    padding: 2px 20px;
+    margin: 0;
+    padding: 10px 20px;
     cursor: pointer;
     text-align: center;
     text-decoration: none;
-    text-transform: uppercase;
-    color: #000;
-    border: 0;
-    border: 2px solid #000;
-    background: none
+    text-transform: none;
+    color: #FFF;
+    border: none;
+    background: #0091FF
 }
 
 .Button:hover,
