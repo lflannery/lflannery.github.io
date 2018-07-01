@@ -439,19 +439,19 @@ div>.Column {
 }
 
 .Social-Nav .Nav-Item.Instagram .Nav-Link {
-    background-image: url(/addisonpetyards/assets/img_instagram.svg);
+    background-image: url(/addisonpetyards/assets/img_instagram.svg) no-repeat;
 }
 
 .Social-Nav .Nav-Item.Facebook .Nav-Link {
-    background-image: url(/addisonpetyards/assets/img_facebook.svg);
+    background-image: url(/addisonpetyards/assets/img_facebook.svg) no-repeat;
 }
 
 .Social-Nav .Nav-Item.Twitter .Nav-Link {
-    background-image: url(/addisonpetyards/assets/img_twitter.svg);
+    background-image: url(/addisonpetyards/assets/img_twitter.svg) no-repeat;
 }
 
 .Social-Nav .Nav-Item.YouTube .Nav-Link {
-    background-image: url(/addisonpetyards/assets/img_youtube.svg);
+    background-image: url(/addisonpetyards/assets/img_youtube.svg) no-repeat;
 }
 
 .Social-Nav .Nav-Item .Nav-Link .Nav-Title {
