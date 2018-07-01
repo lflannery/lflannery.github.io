@@ -438,6 +438,26 @@ div>.Column {
     text-decoration:none
 }
 
+.Social-Nav .Nav-Item.Instagram .Nav-Link {
+    background-image: url(/addisonpetyards/assets/img_instagram.svg);
+}
+
+.Social-Nav .Nav-Item.Facebook .Nav-Link {
+    background-image: url(/addisonpetyards/assets/img_facebook.svg);
+}
+
+.Social-Nav .Nav-Item.Twitter .Nav-Link {
+    background-image: url(/addisonpetyards/assets/img_twitter.svg);
+}
+
+.Social-Nav .Nav-Item.YouTube .Nav-Link {
+    background-image: url(/addisonpetyards/assets/img_youtube.svg);
+}
+
+.Social-Nav .Nav-Item .Nav-Link .Nav-Title {
+    display: none;
+}
+
 .Logo {
     display: block;
     width: 300px
@@ -503,6 +523,13 @@ div>.Column {
     border-right:1px solid #cfcfcf;
     opacity:.25;
     margin-right:1em;
+}
+
+.Footer .Social-Nav .Nav-Item .Nav-Link {
+    background-size: 1.2rem;
+    height: 1.2rem;
+    line-height: 1.2rem;
+    width: 1.2rem;
 }
 
 .Footer .Form {
