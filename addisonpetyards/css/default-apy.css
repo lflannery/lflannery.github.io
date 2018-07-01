@@ -504,6 +504,7 @@ div>.Column {
     padding-bottom: 2rem;
     color:#CFCFCF;
     background:#1F262B;
+    position:relative;
 }
 
 .Footer:before {
