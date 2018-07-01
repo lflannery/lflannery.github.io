@@ -475,6 +475,16 @@ div>.Column {
     padding-bottom: 2rem
 }
 
+.Footer .Viewport {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 1.5rem;
+}
+
 .Footer-Nav .Nav-Item {
     margin-right:.7em;
 }
