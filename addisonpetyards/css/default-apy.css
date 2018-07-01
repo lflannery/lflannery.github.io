@@ -500,6 +500,7 @@ div>.Column {
 }
 
 .Footer {
+    padding-top:0;
     padding-bottom: 2rem;
     color:#CFCFCF;
     background:#1F262B;
@@ -507,18 +508,14 @@ div>.Column {
 
 .Footer:before {
     background: url(/addisonpetyards/assets/img_curve.svg);
-    background-position: 0 0;
+    background-position: 300px 0;
     background-repeat: no-repeat;
     background-size: cover;
     content: "";
     display: block;
-    height: 62px;
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    z-index: -1;
-}
+    width: 100%;
+    height: 100%;
 
 .Footer .Viewport {
     display: -ms-flexbox;
