@@ -476,7 +476,7 @@ div>.Column {
 }
 
 .Footer-Nav .Nav-Item {
-    margin-right:1em;
+    margin-right:.7em;
 }
 
 .Footer-Nav .Nav-Link {
@@ -492,7 +492,23 @@ div>.Column {
     content: "";
     border-right:1px solid #cfcfcf;
     opacity:.25;
-    margin-right:.5em;
+    margin-right:1em;
+}
+
+.Footer .Form {
+    font-size: .9rem;
+    line-height: .9rem;
+}
+
+.Footer .Form .ContentPage:first-child {
+    margin-top: 0;
+}
+
+.Footer .Form form {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: end;
+    align-items: flex-end;
 }
 
 .Credits {
