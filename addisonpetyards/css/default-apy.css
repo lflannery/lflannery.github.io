@@ -445,21 +445,25 @@ div>.Column {
 
 .Social-Nav .Nav-Item.Facebook .Nav-Link {
     background: url(/addisonpetyards/assets/img_facebook.svg) no-repeat;
-    background-size: 1em;
+    background-size: .7em;
 }
 
 .Social-Nav .Nav-Item.Twitter .Nav-Link {
     background: url(/addisonpetyards/assets/img_twitter.svg) no-repeat;
-    background-size: 1.5em;
+    background-size: 1.3em;
 }
 
 .Social-Nav .Nav-Item.YouTube .Nav-Link {
     background: url(/addisonpetyards/assets/img_youtube.svg) no-repeat;
-    background-size: 1.2em;
+    background-size: 1.1em;
 }
 
 .Social-Nav .Nav-Item .Nav-Link .Nav-Title {
     display: none;
+}
+
+.Social-Nav .Nav-Item {
+    margin-right: 1em;
 }
 
 .Logo {
@@ -496,7 +500,7 @@ div>.Column {
 }
 
 .Footer {
-    padding-bottom: 2rem
+    padding-bottom: 2rem;
     color:#1F262B;
 }
 
