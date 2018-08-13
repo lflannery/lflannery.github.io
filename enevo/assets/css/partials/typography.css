@@ -1,0 +1,45 @@
+body {
+    font: normal 1em/1.456 sans-serif;
+    color: #222;
+}
+h1, h2, h3, h4, h5, h6 {
+    font: 600 1.8em/1.1 sans-serif;
+    margin: 0 0 .5em;
+    color: #000;
+}
+h2 {
+    font-size: 1.6em;
+}
+h3 {
+    font-size: 1.4em;
+}
+h4 {
+    font-size: 1.3em;
+}
+h5 {
+    font-size: 1.2em;
+}
+h6 {
+    font-size: 1.1em;
+}
+
+b, strong {
+    font-weight: bold;
+}
+
+/*Links*/
+a {
+    text-decoration: underline;
+    color: #000;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+/*Input placeholders*/
+input, textarea {
+    &:-moz-placeholder, &::-webkit-input-placeholder {
+        color: #666;
+    }
+}
