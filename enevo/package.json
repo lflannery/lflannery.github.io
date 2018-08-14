@@ -1,7 +1,7 @@
 {
-  "name": "[PROJECT NAME GOES HERE]",
+  "name": "enevo",
   "version": "1.0.0",
-  "description": "[PROJECT NAME GOES HERE]",
+  "description": "enevo",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,7 +9,7 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "[PROJECT GIT URL GOES HERE]"
+    "url": "https://bitbucket.org/getfused/enevo-cms.git"
   },
   "devDependencies": {
     "autoprefixer": "^6.3.6",

@@ -54,15 +54,20 @@ body {
     padding: 0 2rem;
 }
 
+.Viewport.Main {
+    padding: 0;
+}
+.ScrollGallery-Content, .Alert-Viewport {
+    padding: 0 2rem;
+}
+
 div > .Column {
     margin: .5rem;
     padding: 1rem;
-    background: #f2f2f2;
 }
 
 .TwoColumn, .ThreeColumn, .FourColumn, .Field-Group, .Inline-Filter, .Inline-Search {
     display: flex;
-    margin: 0 -.5rem;
 }
 .Column, .Field-Group .Field, .Inline-Filter .SelectBox, .Inline-Search .Form-Wrapper {
     margin: 1rem 0;
@@ -70,7 +75,6 @@ div > .Column {
     flex: 1 1 auto;
 }
 .Body-Related, .Form-Body, .Nav-Body, .Nav-Body-Related {
-    margin: 0 -1rem;
 
     > .Column {
         margin: 2rem 1rem;
@@ -93,18 +97,8 @@ div > .Column {
     display: block;
     cursor: pointer;
     text-decoration: none;
-    color: #fff;
-
-    &:hover {
-        transition: .3s;
-        text-decoration: underline;
-        color: #ccc;
-    }
-    .Active & {
-        color: #fc0;
-    }
+    color: $white;
 }
-
 
 .Local-Nav {
     margin: 0 0 1rem 0;
@@ -135,26 +129,102 @@ div > .Column {
     }
 }
 
+.Navigation {
+
+}
+
+.Main-Nav {
+    .Nav-Link {
+        padding: 0 .9375em;
+        font-weight: 500;
+        font-family: 'Helvetica Neue', sans-serif;
+
+        &:hover {
+            color: $orange;
+        }
+
+        .Active {
+            color: $orange;
+        }
+    }
+    .Nav-Item.Button {
+        background-color: $whitebutton;
+        padding: .553em 1.03em;
+
+        .Nav-Link {
+            color: $greybutton;
+            font-weight: bold;
+        }
+    }
+}
+
+.Footer {
+    .Nav-item {
+        display: block;
+        margin: .6em 0;
+    }
+    .Nav-link {
+        color: $footerlink;
+    }
+    .Active .Nav-Link, .Footer-Nav.Nav-Header {
+        color:$orange;
+        font-weight: bold;
+    }
+    .Social-Nav .Nav-item {
+        display: inline-block;
+    }
+
+}
+
 /*---Header-Footer------*/
 /* Header */
 .Header, .Footer {
-    padding: 1rem 0;
     color: #fff;
-    background: #1a1a1a;
 }
-.Logo {
-    display: block;
-    width: 300px;
 
-    img {
-        position: relative;
+.Header {
+    background-color: $black;
+    .Viewport {
+        display: flex;
+        justify-content: space-between;
+        height: 70px;
+        max-width: 1022px;
+    }
+    .Logo {
+        display: block;
+        width: 134px;
+
+        img {
+            position: relative;
+        }
     }
 }
 .Header-Search {
-    position: absolute;
-    top: 0;
-    right: 0;
+    visibility: hidden;
+    width: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    max-width: 225px;
+    &.Expanded {
+        visibility: visible;
+        width: 88%;
+        transition: width .25s ease-in;
+    }
+    .Button-Text {
+        display: inline-block;
+        width: 15px;
+        height: 16px;
+        margin: .25rem  .5rem .45rem;
+        cursor: pointer;
+        visibility: visible !important;
+        background: url('images/icons/search.svg') no-repeat 50%;
+        background-size: cover;
+        filter: invert(1);
+    }
 }
+
+
 
 .Header-Image {
     height: 33vw;
@@ -164,9 +234,51 @@ div > .Column {
 /* Footer */
 .Footer {
     padding-bottom: 2rem;
+    color: $graybackgroundtext;
+    max-width: 1190px;
+    margin: 0 auto;
+
+    .Viewport {
+        display: flex;
+        justify-content: space-between;
+    }
+    .ThreeColumn {
+        margin-top: 3em;
+        .Column {
+            margin-top: 0;
+            padding-top: 0;
+        }
+        .Column.One {
+            flex: 0 1 23%;
+        }
+        .Column.Two {
+            margin-top: .6em;
+        }
+    }
 }
+
+.Login.Button {
+    background-color: $greybutton;
+    padding-left: 2.4em;
+    padding-right: 2.4em;
+    margin: 0;
+}
+
+.Newsletter {
+    max-width: 350px;
+    margin-top: 3em;
+    h2 {
+        color: $black;
+        font-size: 1.125em;
+        font-weight: bold;
+        line-height: 1.44;
+    }
+}
+
 .Credits {
-    font-size: .8em;
+    font-size: .9em;
+    text-align: center;
+    color: $lightgrey;
 
     a {
         font-weight: 500;
@@ -219,15 +331,14 @@ div > .Column {
     font-weight: bold;
     display: inline-block;
     margin: 1rem 0;
-    padding: 2px 20px;
+    padding: .9375em 1.97em 1em 1.97em;
     cursor: pointer;
     text-align: center;
     text-decoration: none;
-    text-transform: uppercase;
-    color: #000;
+    color: $white;
     border: 0;
-    border: 2px solid #000;
-    background: none;
+    border-radius: 1.5625em;
+    background-color: $orange;
 
     &:hover {
         transition: .3s;
@@ -246,7 +357,6 @@ div > .Column {
     &-Item {
         margin-bottom: .5rem;
         padding: 1rem;
-        background: #f2f2f2;
     }
     &-Info {
         position: relative;
@@ -337,14 +447,16 @@ label {
         outline: none;
         background: 0;
     }
+    /*
     .Button-Text {
         display: block;
         width: 15px;
         height: 16px;
         margin: 0 auto;
-        background: url('/assets/images/icons/search.svg') no-repeat center center;
+        background: url('images/icons/search.svg') no-repeat center center;
         background-size: cover;
     }
+    */
 }
 
 .Inline-Form .Input {
@@ -403,13 +515,51 @@ label {
 }
 
 /*---Content-------*/
-.Section {
-    margin: 2rem 0;
+.Viewport.Main {
+    max-width: none;
+}
+
+.Content-Body .Viewport {
+    max-width: 1190px;
 }
 
 .Content-Body > .Page-Title {
     margin-top: 2rem;
 }
+
+.Featured-Clients {
+    background-color: $graybackground;
+    h2.Page-Subtitle {
+        color: $white;
+        font-size:2.25em;
+        text-align: center;
+        font-weight: normal;
+    }
+    img {
+        filter: grayscale(100%);
+        max-width: none;
+        max-height: 70px;
+    }
+    .Listing-Item {
+        text-align: center;
+    }
+}
+
+/* Homepage */
+.Panel h2, h2.Page-Subtitle {
+    color: $black;
+    font-size: 2.25em;
+    font-weight: normal;
+}
+
+.Panel.Two {
+    background: linear-gradient(180deg, #242424 0%, #3D3D3D 100%);
+    h2 {
+        color: $white;
+    }
+}
+
+
 
 /* Properties*/
 .Property {
