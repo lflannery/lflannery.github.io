@@ -1,6 +1,8 @@
 body {
 	font: 300 14px/1.456 Roboto Sans,sans-serif;
     color: #000;
+    width: 900px;
+    margin: 0 auto;
 }
 h1 {
 	font: 900 3em/1 Roboto Slab,serif;
@@ -12,9 +14,24 @@ h2 {
     margin: 0 0 .8em;
     text-transform: uppercase;
 }
-.Blog {
-	width: 70%;
-	margin:0 auto;
+.Main-Nav {
+	background: #609;
+	padding: .1em 0;
+	margin: 2em 0;
+}
+.Main-Nav ul {
+	text-align: center;
+	padding:0;
+}
+.Main-Nav li {
+	list-style:none;
+	display:inline;
+	margin: 2em;
+}
+.Main-Nav li a {
+	font: 900 1.5em/1 Roboto Slab,serif;
+	color: #fff;
+	text-decoration: none;
 }
 .Listing-Item {
 	margin: 1em 0 0;

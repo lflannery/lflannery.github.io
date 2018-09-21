@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Home</title>
+	<title>Blog</title>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.min.js"></script>
  	<script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
  	<script type="text/javascript" src="js/script.js"></script>
@@ -17,11 +17,23 @@
 		</ul>
 	</nav>
 </header>
-<body class="Home">
-	<h1 class="Page-Title">Big Sister of Greater Boston</h1>
+<body class="Blog">
+	<h1 class="Page-Title">Blog</h1>
 	<div id="main">
 		<script id="handlebars-demo" type="x-handlebars-template">
-
+		{{#each content}}
+			<div class="Listing-Item Clear">
+				<a class="Listing-Thumbnail" href="/blog/{{this.title}}-{{this.contentId}}">
+					<img src="{{this.thumbnailImage}}" height="500" width="500"
+				</a>
+				<div class="Listing-Info Has-Thumbnail">
+					<a class="Listing-Title Listing-Link" href="/blog/{{this.title}}-{{this.contentId}}">{{this.title}}</a>
+					<p class="Abstract">
+						{{this.abstract}} <a role="presentation" tabindex="-1" class="Listing-Link Learn-More" href="/blog/{{this.title}}-{{this.contentId}}">Read more</a>
+					</p>
+				</div>
+			</div>
+		{{/each}}
 		</script> 
 	</div>
 </body>
