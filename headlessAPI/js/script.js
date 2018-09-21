@@ -2,7 +2,7 @@ var BLOG_CONTENT_METHOD ={
 
         handlerData:function(resJSON){
 
-            var templateSource   = $("#handlebars-demo").html(),
+            var templateSource   = $("#handlebars-blog").html(),
 
                 template = Handlebars.compile(templateSource),
 
