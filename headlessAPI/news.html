@@ -19,8 +19,21 @@
 </header>
 <body class="News">
 	<h1 class="Page-Title">News</h1>
-	<div id="main">
-		<script id="handlebars-demo" type="x-handlebars-template">
+	<div id="mainNews">
+		<script id="handlebars-news" type="x-handlebars-template">
+			{{#each content}}
+			<div class="Listing-Item Clear">
+				<a class="Listing-Thumbnail" href="/blog/{{this.title}}-{{this.contentId}}">
+					<img src="{{this.thumbnailImage}}" height="500" width="500"
+				</a>
+				<div class="Listing-Info Has-Thumbnail">
+					<a class="Listing-Title Listing-Link" href="/blog/{{this.title}}-{{this.contentId}}">{{this.title}}</a>
+					<p class="Abstract">
+						{{this.abstract}} <a role="presentation" tabindex="-1" class="Listing-Link Learn-More" href="/blog/{{this.title}}-{{this.contentId}}">Read more</a>
+					</p>
+				</div>
+			</div>
+		{{/each}}
 
 		</script> 
 	</div>
