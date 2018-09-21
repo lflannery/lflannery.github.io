@@ -1,45 +1,28 @@
-var jqueryNoConflict = jQuery;
+var CONTENT_METHOD ={
 
-//begin main function
-jqueryNoConflict(document).ready(function(){
-    retriveData();
-});
-//end main function
+        handlerData:function(resJSON){
 
-// grab data
-function retriveData() {
-    var dataSource = 'https://lflannery.github.io/headlessAPI/json/blog.json';
-    jqueryNoConflict.getJSON(dataSource, renderDataVisualsTemplate);
-};
+            var templateSource   = $("#handlebars-demo").html(),
 
-// create projects content template
-function renderDataVisualsTemplate(data){
-    getTemplateAjax('index.html', function(template) {
-        handlebarsDebugHelper();
-        jqueryNoConflict('#handlebars-demo').html(template(data));
-    })
-};
+                template = Handlebars.compile(templateSource),
 
-// render handlebars templates via ajax
-function getTemplateAjax(path, callback) {
-    var source, template;
-    jqueryNoConflict.ajax({
-        url: path,
-        success: function (data) {
-            source = data;
-            template = Handlebars.compile(source);
-            if (callback) callback(template);
+                content = template(resJSON);
+
+           $('#main').html(content);
+            
+        },
+        loadContent : function(){
+
+            $.ajax({
+                url:"https://lflannery.github.io/headlessAPI/json/blog.json",
+                method:'get',
+                success:this.handlerData
+
+            })
         }
-    });
-}
-//end
-
-// add handlebars debugger
-function handlebarsDebugHelper(){
-    Handlebars.registerHelper("debug", function(optionalValue) {
-        console.log("Current Context");
-        console.log("====================");
-        console.log(this);
-    });
 };
-// end
+
+$(document).ready(function(){
+
+    CONTENT_METHOD.loadContent();
+});

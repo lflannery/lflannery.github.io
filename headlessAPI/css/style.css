@@ -1,0 +1,41 @@
+body {
+	font: 300 14px/1.456 Roboto Sans,sans-serif;
+    color: #000;
+}
+h1 {
+	font: 900 3em/1 Roboto Slab,serif;
+    margin: 0 0 .8em;
+    text-transform: uppercase;
+}
+h2 {
+	font: 900 2.25em/1 Roboto Slab,serif;
+    margin: 0 0 .8em;
+    text-transform: uppercase;
+}
+.Blog {
+	width: 70%;
+	margin:0 auto;
+}
+.Listing-Item {
+	margin: 1em 0 0;
+	padding: 0 0 1em;
+	border-bottom: 1px solid #ededed;
+}
+
+.Listing-Info {
+	display: inline-block;
+    max-width: 62%;
+    margin-left: 1em;
+    padding: 0;
+    vertical-align: top;
+}
+
+.Listing-Title {
+	font-family: 'Roboto Slab', serif;
+    font-size: 1.3em;
+    font-weight: 900;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+}

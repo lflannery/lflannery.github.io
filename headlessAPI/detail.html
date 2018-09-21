@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>News</title>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.min.js"></script>
+ 	<script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+ 	<script type="text/javascript" src="js/script.js"></script>
+ 	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body id="main">
+	<script id="handlebars-demo" type="x-handlebars-template">
+		<div class="Listing-Item Clear">
+			<div class="Listing-Info Has-Thumbnail">
+				<a class="Listing-Title Listing-Link" href="/blog/{{this.title}}-{{this.contentId}}">{{this.title}}</a>
+				<p class="Abstract">
+					{{this.abstract}} <a role="presentation" tabindex="-1" class="Listing-Link Learn-More" href="/blog/{{this.title}}-{{this.contentId}}">Read more</a>
+				</p>
+			</div>
+		</div>
+	</script> 
+</body>
+</html>
