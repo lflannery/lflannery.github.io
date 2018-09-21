@@ -546,10 +546,18 @@ label {
 }
 
 /* Homepage */
+h2.Page-Subtitle {
+    text-align: center;
+}
 .Panel h2, h2.Page-Subtitle {
     color: $black;
     font-size: 2.25em;
     font-weight: normal;
+}
+
+.Panel.One .Button {
+    background-color: $greybutton;
+    padding: 1em 3.5em;
 }
 
 .Panel.Two {
@@ -557,8 +565,64 @@ label {
     h2 {
         color: $white;
     }
+    .Button {
+        background-color: $whitebutton;
+        color: $greybutton;
+        padding: 1em 3.5em;
+    }
 }
 
+.Panel.Three {
+    text-align: center;
+
+    .Listing-Item {
+        width: 100px;
+        height: 120px;
+        background-size: contain;
+    }
+    a {
+        color: $graybackgroundtext;
+        text-decoration: none;
+        font-size: 1.125em;
+        font-weight: bold;
+    }
+    .Grid-5 a {
+        position: absolute;
+        display: block;
+        width: 120px;
+        padding-top: 10px;
+    }
+}
+.citiesMunicipalities {
+    background: url(images/icons/citiesMunicipalities.svg) no-repeat;
+}
+
+.restaurants {
+    background: url(images/icons/restaurants.svg) no-repeat;
+}
+
+.retail {
+    background: url(images/icons/retail.svg) no-repeat;
+}
+
+.commercialRealEstate {
+    background: url(images/icons/commercialRealEstate.svg) no-repeat;
+}
+
+.multiFamilyResidences {
+    background: url(images/icons/multiFamilyResidences.svg) no-repeat;
+}
+
+.Panel.Four {
+    background: linear-gradient(180deg, #CECCCC 0%, #F3F3F3 100%);
+    p {
+        color: $graybackgroundtext;
+    }
+    .Button {
+        background-color: $greybutton;
+        padding: 1em 3.5em;
+    }
+}
 
 
 /* Properties*/

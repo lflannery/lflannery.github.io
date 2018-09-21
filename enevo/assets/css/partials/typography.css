@@ -35,12 +35,14 @@ b, strong {
 
 .Listing-Title {
     font-size: 1.5em;
+    font-family: 'Helvetica Neue', sans-serif;
     font-weight: bold;
     color: $black;
 }
 
 /*Links*/
 a {
+    font-family: 'Helvetica Neue', sans-serif;
     text-decoration: underline;
     color: $orange;
 

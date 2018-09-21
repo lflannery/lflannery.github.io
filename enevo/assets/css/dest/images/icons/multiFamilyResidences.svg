@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="86px" height="107px" viewBox="0 0 86 107" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Round-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1-Home" transform="translate(-1081.000000, -1802.000000)" fill="#FF8820">
+            <g id="Group-2" transform="translate(190.000000, 1783.000000)">
+                <g id="Group" transform="translate(891.000000, 19.000000)">
+                    <polygon id="Fill-1" points="43.4921466 0 40 4.29080542 82.5078534 35 86 30.7042053"></polygon>
+                    <polygon id="Fill-2" points="43.493222 0 0 30.634452 3.50677801 35 47 4.37058908"></polygon>
+                    <polygon id="Fill-3" points="3 107 83 107 83 98 3 98"></polygon>
+                    <path d="M11,35.1241326 L11,104 L76,104 L76,35.1241326 L43.5025408,12 L11,35.1241326 Z M47.1512001,59.6263906 L68.1132046,59.6263906 L68.1132046,40.9710321 L47.1512001,40.9710321 L47.1512001,59.6263906 Z M19.3441482,59.8189228 L40.3112345,59.8189228 L40.3112345,41.1584976 L19.3441482,41.1584976 L19.3441482,59.8189228 Z M47.3341412,85.9931711 L68.3012274,85.9931711 L68.3012274,67.3327459 L47.3341412,67.3327459 L47.3341412,85.9931711 Z M19.3441482,97.8288358 L40.3112345,97.8288358 L40.3112345,67.3378125 L19.3441482,67.3378125 L19.3441482,97.8288358 Z" id="Fill-4"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
