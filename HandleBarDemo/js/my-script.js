@@ -18,7 +18,7 @@ var STUDENT_METHOD ={
         loadStudentData : function(){
 
             $.ajax({
-                url:"http://localhost:63342/HandleBarDemo/data/studentData.json",
+                url:"https://lflannery.github.io/HandleBarDemo/data/studentData.json",
                 method:'get',
                 success:this.handlerData
 
