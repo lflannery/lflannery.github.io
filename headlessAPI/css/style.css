@@ -39,6 +39,9 @@ img {
     border: 0;
     height:auto;
 }
+a {
+	color: #609;
+}
 .Listing-Item {
 	margin: 1em 0 0;
 	padding: 0 0 1em;
@@ -53,6 +56,15 @@ img {
     text-transform: uppercase;
     color: #000;
 }
+.Date {
+	color: gray;
+}
+.Listing .Property {
+	font-size: .9em;
+}
+.Listing .Property a {
+	text-decoration: none;
+}
 /* Blog */
 .Blog .Listing-Thumbnail {
 	display: inline-block;
@@ -64,4 +76,9 @@ img {
     margin-left: 1em;
     padding: 0;
     vertical-align: top;
+}
+/* News */
+.News .Listing-Item {
+	background: #ededed;
+	padding: 1em;
 }
