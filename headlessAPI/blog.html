@@ -12,8 +12,8 @@
 	<nav class="Main-Nav">
 		<ul>
 			<li><a href="index.html">Home</a></li>
-			<li><a href="blog.html">Blog</a></li>
-			<li><a href="news.html" class="Active">News</a></li>
+			<li><a href="blog.html" class="Active">Blog</a></li>
+			<li><a href="news.html">News</a></li>
 		</ul>
 	</nav>
 </header>
@@ -24,7 +24,7 @@
 		{{#each content}}
 			<div class="Listing-Item Clear">
 				<a class="Listing-Thumbnail" href="/blog/{{this.title}}-{{this.contentId}}">
-					<img src="{{this.thumbnailImage}}" height="500" width="500"
+					<img src="{{this.thumbnailImage}}" height="500" width="500">
 				</a>
 				<div class="Listing-Info Has-Thumbnail">
 					<a class="Listing-Title Listing-Link" href="/blog/{{this.title}}-{{this.contentId}}">{{this.title}}</a>
