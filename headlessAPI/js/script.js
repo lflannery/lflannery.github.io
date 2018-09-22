@@ -84,3 +84,23 @@ $(document).ready(function(){
 
     HOME_CONTENT_METHOD.loadContent();
 });
+
+
+Handlebars.registerHelper('link', function(title) {
+
+    url  = title.replace(/[^a-zA-Z0-9 ]/g, "");
+    result = url.replace(/ /g, "-");
+    
+    return new Handlebars.SafeString(result);
+
+});
+
+
+/*
+Handlebars.registerHelper('formatDate', function (date, format) {
+    var mmnt = moment(date);
+    return mmnt.format(format);
+});
+
+var helpers = require('handlebars-helpers')();
+*/

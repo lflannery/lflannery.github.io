@@ -2,9 +2,6 @@
 <html>
 <head>
 	<title>News</title>
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.min.js"></script>
- 	<script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
- 	<script type="text/javascript" src="js/script.js"></script>
  	<link rel="stylesheet" type="text/css" href="css/style.css">
  	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
 </head>
@@ -24,19 +21,22 @@
 			{{#each content}}
 			<div class="Listing-Item Clear">
 				<div class="Listing-Info">
-					<a class="Listing-Title Listing-Link" href="/blog/{{this.title}}-{{this.contentId}}">{{this.title}}</a>
+					<a class="Listing-Title Listing-Link" href="/news/{{link this.title}}-{{this.contentId}}">{{this.title}}</a>
 					<time class="Date">{{this.publishDate}}</time>
 					<span class="Property Property-Type">
 						<span class="Label">in</span>
-						<a href="/news-and-events/news?type={{this.type}}">{{this.type}}</a>
+						<a href="/news?type={{this.type}}">{{this.type}}</a>
 					</span>
 					<p class="Abstract">
-						{{this.abstract}} <a role="presentation" tabindex="-1" class="Listing-Link Learn-More" href="/blog/{{this.title}}-{{this.contentId}}">Read more</a>
+						{{this.abstract}} <a role="presentation" tabindex="-1" class="Listing-Link Learn-More" href="/news/{{link this.title}}-{{this.contentId}}">Read more</a>
 					</p>
 				</div>
 			</div>
 		{{/each}}
 		</script> 
 	</div>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.min.js"></script>
+ 	<script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+ 	<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

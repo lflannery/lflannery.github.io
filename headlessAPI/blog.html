@@ -2,9 +2,6 @@
 <html>
 <head>
 	<title>Blog</title>
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.min.js"></script>
- 	<script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
- 	<script type="text/javascript" src="js/script.js"></script>
  	<link rel="stylesheet" type="text/css" href="css/style.css">
  	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
 </head>
@@ -23,18 +20,21 @@
 		<script id="handlebars-blog" type="x-handlebars-template">
 		{{#each content}}
 			<div class="Listing-Item Clear">
-				<a class="Listing-Thumbnail" href="/blog/{{this.title}}-{{this.contentId}}">
+				<a class="Listing-Thumbnail" href="/blog/{{link this.title}}-{{this.contentId}}">
 					<img src="{{this.thumbnailImage}}" height="500" width="500">
 				</a>
 				<div class="Listing-Info Has-Thumbnail">
-					<a class="Listing-Title Listing-Link" href="/blog/{{this.title}}-{{this.contentId}}">{{this.title}}</a>
+					<a class="Listing-Title Listing-Link" href="/blog/{{link this.title}}-{{this.contentId}}">{{this.title}}</a>
 					<p class="Abstract">
-						{{this.abstract}} <a role="presentation" tabindex="-1" class="Listing-Link Learn-More" href="/blog/{{this.title}}-{{this.contentId}}">Read more</a>
+						{{this.abstract}} <a role="presentation" tabindex="-1" class="Listing-Link Learn-More" href="/blog/{{link this.title}}-{{this.contentId}}">Read more</a>
 					</p>
 				</div>
 			</div>
 		{{/each}}
 		</script> 
 	</div>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.min.js"></script>
+ 	<script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+ 	<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
