@@ -21,28 +21,30 @@
 	<h1 class="Page-Title">Big Sister of Greater Boston</h1>
 	<div id="mainHome">
 		<script id="handlebars-home" type="x-handlebars-template">
-			{{this.title}}
-			<div class="ContentPage">
+			{{#each content}}
+						<div class="ContentPage">
 				<div class="SectionOne ContentBody">
-					<div class="Detail Body">{{this.body}}</div>
+					<div class="Detail Body">{{{this.body}}}</div>
 				</div>
 				<div class="SectionTwo ContentBody">
 					<div class="ThreeColumn">
 						<div class="Column One">
 							<img src="{{this.image1}}" height="200" width="200">
-							<div class="Detail Body">{{this.contentBlock1}}</div>
+							<div class="Detail Body">{{{this.contentBlock1}}}</div>
 						</div>
 						<div class="Column Two">
 							<img src="{{this.image2}}" height="200" width="200">
-							<div class="Detail Body">{{this.contentBlock2}}</div>
+							<div class="Detail Body">{{{this.contentBlock2}}}</div>
 						</div>
 						<div class="Column Three">
 							<img src="{{this.image3}}" height="200" width="200">
-							<div class="Detail Body">{{this.contentBlock3}}</div>
+							<div class="Detail Body">{{{this.contentBlock3}}}</div>
 						</div>
 					</div>
 				</div>
 			</div>
+			{{/each}}
+
 		</script> 
 	</div>
 </body>
