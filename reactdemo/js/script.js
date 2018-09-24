@@ -4,26 +4,23 @@ class Homepage extends React.Component {
 
           	<div class="ContentPage">
 				<div class="SectionOne ContentBody">
-					<div class="Detail Body">{{{this.body}}}</div>
+					<div class="Detail Body">Body Content</div>
 				</div>
 				<div class="SectionTwo ContentBody">
 					<div class="ThreeColumn">
 						<div class="Column One">
-							<img src="{{this.image1}}" height="200" width="200">
-							<div class="Detail Body">{{{this.contentBlock1}}}</div>
+							<div class="Detail Body">Content Block 1</div>
 						</div>
 						<div class="Column Two">
-							<img src="{{this.image2}}" height="200" width="200">
-							<div class="Detail Body">{{{this.contentBlock2}}}</div>
+							<div class="Detail Body">Content Block 2</div>
 						</div>
 						<div class="Column Three">
-							<img src="{{this.image3}}" height="200" width="200">
-							<div class="Detail Body">{{{this.contentBlock3}}}</div>
+							<div class="Detail Body">Content Block 3</div>
 						</div>
 					</div>
 				</div>
 			</div>
-          	
+
          );
       }
   }
