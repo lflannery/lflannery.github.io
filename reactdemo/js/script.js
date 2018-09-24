@@ -1,3 +1,6 @@
+import React, { Component } from 'react';
+import data from './homepage.json';
+
 class MainNav extends React.Component {
       render() {
           return (
@@ -18,13 +21,20 @@ class MainNav extends React.Component {
       document.getElementById('main-nav')
   );
 
+
 class Homepage extends React.Component {
       render() {
           return (
-
           	<div className="ContentPage">
 				<div className="SectionOne ContentBody">
-					<div className="Detail Body">Body Content</div>
+	          	{
+		          data.map(function(content){
+		            return 
+		            <div className="Detail Body">
+		            {content.body} 
+		            </div>;
+		          })
+		        }
 				</div>
 				<div className="SectionTwo ContentBody">
 					<div className="ThreeColumn">
