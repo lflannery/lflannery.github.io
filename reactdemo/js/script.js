@@ -1,4 +1,24 @@
-className Homepage extends React.Component {
+class MainNav extends React.Component {
+      render() {
+          return (
+
+	        <nav class="Main-Nav">
+			    <ul>
+			      <li><a href="index.html" class="Active">Home</a></li>
+			      <li><a href="blog.html">Blog</a></li>
+			      <li><a href="news.html">News</a></li>
+			    </ul>
+	  		</nav>
+
+        );
+      }
+  }
+  ReactDOM.render(
+      <MainNav />,
+      document.getElementById('main-nav')
+  );
+
+class Homepage extends React.Component {
       render() {
           return (
 
@@ -27,25 +47,4 @@ className Homepage extends React.Component {
   ReactDOM.render(
       <Homepage />,
       document.getElementById('mainHome')
-  );
-
-
-className MainNav extends React.Component {
-      render() {
-          return (
-
-	        <nav class="Main-Nav">
-			    <ul>
-			      <li><a href="index.html" class="Active">Home</a></li>
-			      <li><a href="blog.html">Blog</a></li>
-			      <li><a href="news.html">News</a></li>
-			    </ul>
-	  		</nav>
-
-        );
-      }
-  }
-  ReactDOM.render(
-      <MainNav />,
-      document.getElementById('main-nav')
   );
