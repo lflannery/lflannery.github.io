@@ -1,5 +1,3 @@
-import data from './homepage.json';
-
 class MainNav extends React.Component {
       render() {
           return (
@@ -20,39 +18,53 @@ class MainNav extends React.Component {
       document.getElementById('main-nav')
   );
 
-
 class Homepage extends React.Component {
-      render() {
-          return (
-          	<div className="ContentPage">
-				<div className="SectionOne ContentBody">
-	          	{
-		          data.map(function(content){
-		            return 
-		            <div className="Detail Body">
-		            {content.body} 
-		            </div>;
-		          })
-		        }
-				</div>
-				<div className="SectionTwo ContentBody">
-					<div className="ThreeColumn">
-						<div className="Column One">
-							<div className="Detail Body">Content Block 1</div>
-						</div>
-						<div className="Column Two">
-							<div className="Detail Body">Content Block 2</div>
-						</div>
-						<div className="Column Three">
-							<div className="Detail Body">Content Block 3</div>
-						</div>
+	constructor(props) {
+		super(props)
+		this.state = { data: [] }
+	}
+	
+	loadData() {
+		get('https://lflannery.github.io/reactdemo/json/blog.json')
+			.then(response => response.json())
+			.then(data => {
+				this.jsonData({data: data })
+		})
+			.catch(err => console.error(this.props.url, err.toString()))
+	}
+
+	
+  render() {
+    return (
+      	<div className="ContentPage">
+			<div className="SectionOne ContentBody">
+          	{
+	          data.map(function(content){
+	            return 
+	            <div className="Detail Body">
+	            {content.body} 
+	            </div>;
+	          })
+	        }
+			</div>
+		    <div className="SectionTwo ContentBody">
+				<div className="ThreeColumn">
+					<div className="Column One">
+						<div className="Detail Body">Content Block 1</div>
+					</div>
+					<div className="Column Two">
+						<div className="Detail Body">Content Block 2</div>
+					</div>
+					<div className="Column Three">
+						<div className="Detail Body">Content Block 3</div>
 					</div>
 				</div>
 			</div>
-
-         );
-      }
+		</div>
+	;
   }
+}
+
   ReactDOM.render(
       <Homepage />,
       document.getElementById('mainHome')
