@@ -2,7 +2,7 @@ class MainNav extends React.Component {
       render() {
           return (
 
-	        <nav class="Main-Nav">
+	        <nav>
 			    <ul>
 			      <li><a href="index.html">Home</a></li>
 			      <li><a href="blog.html">Blog</a></li>
