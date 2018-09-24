@@ -6,6 +6,7 @@
  	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
 </head>
 <header>
+
 	<nav class="Main-Nav">
 		<ul>
 			<li><a href="index.html">Home</a></li>
@@ -18,6 +19,7 @@
 	<h1 class="Page-Title">News</h1>
 	<div id="mainNews">
 		<script id="handlebars-news" type="x-handlebars-template">
+			{{> main-nav }}
 			{{#each content}}
 			<div class="Listing-Item Clear">
 				<div class="Listing-Info">
@@ -27,9 +29,11 @@
 						<span class="Label">in</span>
 						<a href="/news?type={{this.type}}">{{this.type}}</a>
 					</span>
-					<p class="Abstract">
-						{{this.abstract}} <a role="presentation" tabindex="-1" class="Listing-Link Learn-More" href="/news/{{link this.title}}-{{this.contentId}}">Read more</a>
-					</p>
+					{{#if this.abstract}}
+						<p class="Abstract">
+							{{this.abstract}} <a role="presentation" tabindex="-1" class="Listing-Link Learn-More" href="/news/{{link this.title}}-{{this.contentId}}">Read more</a>
+						</p>
+					{{/if}}
 				</div>
 			</div>
 		{{/each}}
