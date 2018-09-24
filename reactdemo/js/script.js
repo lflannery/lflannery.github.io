@@ -4,7 +4,7 @@ class MainNav extends React.Component {
 
 	        <nav class="Main-Nav">
 			    <ul>
-			      <li><a href="index.html" class="Active">Home</a></li>
+			      <li><a href="index.html">Home</a></li>
 			      <li><a href="blog.html">Blog</a></li>
 			      <li><a href="news.html">News</a></li>
 			    </ul>
