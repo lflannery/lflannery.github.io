@@ -1,6 +1,6 @@
 class Greeting extends React.Component {
       render() {
-          return (<p>Hello world</p>);
+          return (<p>Hello Jessica!</p>);
       }
   }
   ReactDOM.render(
