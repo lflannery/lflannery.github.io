@@ -2,9 +2,9 @@ class MainNav extends React.Component {
       render() {
           return (
 
-	        <nav>
+	        <nav className="Main-Nav">
 			    <ul>
-			      <li><a href="index.html">Home</a></li>
+			      <li><a href="index.html" className="Active">Home</a></li>
 			      <li><a href="blog.html">Blog</a></li>
 			      <li><a href="news.html">News</a></li>
 			    </ul>
@@ -22,20 +22,20 @@ class Homepage extends React.Component {
       render() {
           return (
 
-          	<div class="ContentPage">
-				<div class="SectionOne ContentBody">
-					<div class="Detail Body">Body Content</div>
+          	<div className="ContentPage">
+				<div className="SectionOne ContentBody">
+					<div className="Detail Body">Body Content</div>
 				</div>
-				<div class="SectionTwo ContentBody">
-					<div class="ThreeColumn">
-						<div class="Column One">
-							<div class="Detail Body">Content Block 1</div>
+				<div className="SectionTwo ContentBody">
+					<div className="ThreeColumn">
+						<div className="Column One">
+							<div className="Detail Body">Content Block 1</div>
 						</div>
-						<div class="Column Two">
-							<div class="Detail Body">Content Block 2</div>
+						<div className="Column Two">
+							<div className="Detail Body">Content Block 2</div>
 						</div>
-						<div class="Column Three">
-							<div class="Detail Body">Content Block 3</div>
+						<div className="Column Three">
+							<div className="Detail Body">Content Block 3</div>
 						</div>
 					</div>
 				</div>
