@@ -1,4 +1,4 @@
-class Homepage extends React.Component {
+className Homepage extends React.Component {
       render() {
           return (
 
@@ -30,7 +30,7 @@ class Homepage extends React.Component {
   );
 
 
-class MainNav extends React.Component {
+className MainNav extends React.Component {
       render() {
           return (
 
