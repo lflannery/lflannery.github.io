@@ -1,11 +1,9 @@
-'use strict';
-
-function(){
-
-    $.ajax({
-        url:"https://lflannery.github.io/reactdemo/json/blog.json",
-        method:'get',
-        success:this.handlerData,
-        console.log(handlerData)
-
-    });
+class Greeting extends React.Component {
+      render() {
+          return (<p>Hello world</p>);
+      }
+  }
+  ReactDOM.render(
+      <Greeting />,
+      document.getElementById('root')
+  );
