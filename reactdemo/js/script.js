@@ -1,4 +1,3 @@
-import React, { Component } from 'react';
 import data from './homepage.json';
 
 class MainNav extends React.Component {
