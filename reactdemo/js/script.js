@@ -57,7 +57,7 @@ class Homepage extends React.Component {
 	    	return (
 	       		<div className="Detail Body">
                     {content.body} 
-                </div>;
+                </div>
 	     	);
 	   	});
 	}
