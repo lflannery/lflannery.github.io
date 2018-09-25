@@ -63,6 +63,4 @@ class Homepage extends React.Component {
 	}
 }
 
-export default Data;
-
 ReactDOM.render(<Homepage />,document.getElementById('mainHome'));
