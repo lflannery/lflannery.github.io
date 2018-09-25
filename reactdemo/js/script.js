@@ -19,53 +19,32 @@ class MainNav extends React.Component {
   );
 
 class Homepage extends React.Component {
-	constructor(props) {
-	    super(props);
+	state = {
+		data : null
+	};
 
-	    this.state = {
-	      data: null,
-	    };
-	  }
+	componentDidMount() {
+		fetch('https://lflannery.github.io/headlessAPI/json/homepage.json')
+		  .then(response => response.json())
+		  .then(data => this.setState({ data }));
+	}
 
-	  componentDidMount() {
-	    fetch('https://lflannery.github.io/headlessAPI/json/homepage.json')
-	      .then(response => response.json())
-	      .then(data => this.setState({ data }));
-	  }
-
-	  render() {
-          return (
-          	<div className="ContentPage">
-				<div className="SectionOne ContentBody">
-	          	{
-		          data.map(function(content){
-		            return 
-		            <div className="Detail Body">
-		            {content.body} 
-		            </div>;
-		          })
-		        }
-				</div>
-				<div className="SectionTwo ContentBody">
-					<div className="ThreeColumn">
-						<div className="Column One">
-							<div className="Detail Body">Content Block 1</div>
-						</div>
-						<div className="Column Two">
-							<div className="Detail Body">Content Block 2</div>
-						</div>
-						<div className="Column Three">
-							<div className="Detail Body">Content Block 3</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-        );
-    }
+	render() {
+	    const { data } = this.state;
+	    return (
+	      <React.Fragment>
+	        <h1>Big Sister Asssiation of Greater Boston</h1>
+	          data.map(content => {
+	            return (
+	            	<div className="Detail Body">
+                		{content.body} 
+                	</div>;
+	            );
+	          })
+	      </React.Fragment>
+	    );
+	 }
 }
 
-  ReactDOM.render(
-      <Homepage />,
-      document.getElementById('mainHome')
-  );
+
+ReactDOM.render(<Homepage />,document.getElementById('mainHome'));
