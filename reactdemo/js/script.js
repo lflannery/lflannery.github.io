@@ -18,9 +18,22 @@ class MainNav extends React.Component {
       document.getElementById('main-nav')
   );
 
-
 class Homepage extends React.Component {
-      render() {
+	constructor(props) {
+	    super(props);
+
+	    this.state = {
+	      data: null,
+	    };
+	  }
+
+	  componentDidMount() {
+	    fetch('https://lflannery.github.io/headlessAPI/json/homepage.json')
+	      .then(response => response.json())
+	      .then(data => this.setState({ data }));
+	  }
+
+	  render() {
           return (
           	<div className="ContentPage">
 				<div className="SectionOne ContentBody">
@@ -48,9 +61,10 @@ class Homepage extends React.Component {
 				</div>
 			</div>
 
-         );
-      }
-  }
+        );
+    }
+}
+
   ReactDOM.render(
       <Homepage />,
       document.getElementById('mainHome')
