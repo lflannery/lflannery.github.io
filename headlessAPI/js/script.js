@@ -1,110 +1,134 @@
-//Main Nav Script
-
-var content = {
-	"link_one" : "Home",
-	"link_two" : "Blog",
-	"link_three": "News"
-}
-
-var template = Handlebars.templates['mainNav'](content);
-
-$(document.getElementById("main-nav")).append(template);
+requirejs(["handlebars"], function(Handlebars) {
+	
 
 
-//Homepage Content Script
-var homepage_content ={
 
-    handlerData:function(resJSON){
 
-        var template = Handlebars.templates['homepage'],
 
-            content = template(resJSON);
 
-			$('#content-home').html(content);
-        
-    },
-    loadContent : function(){
+/*
+//Pagination Helper
+var paginate = require('handlebars-paginate');
+ 
+Handlebars.registerHelper('paginate', paginate);
 
-        $.ajax({
-            url:"https://lflannery.github.io/headlessAPI/json/homepage.json",
-            method:'get',
-            success:this.handlerData
+var html = template({pagination: {
+  page: 3,
+  pageCount: 10
+}});
+*/
 
-        })
-    } 
-};
+	//Main Nav Script
+	var content = {
+		"link_one" : "Home",
+		"link_two" : "Blog",
+		"link_three": "News"
+	}
 
-$(document).ready(function(){
+	var template = Handlebars.templates['mainNav'](content);
 
-    homepage_content.loadContent();
+	$(document.getElementById("main-nav")).append(template);
+
+
+	//Homepage Content Script
+	var homepage_content ={
+
+	    handlerData:function(resJSON){
+
+	        var template = Handlebars.templates['homepage'],
+
+	            content = template(resJSON);
+
+				$('#content-home').html(content);
+	        
+	    },
+	    loadContent : function(){
+
+	        $.ajax({
+	            url:"https://lflannery.github.io/headlessAPI/json/homepage.json",
+	            method:'get',
+	            success:this.handlerData
+
+	        })
+	    } 
+	};
+
+	$(document).ready(function(){
+
+	    homepage_content.loadContent();
+	});
+
+
+	//News Listing Script
+	var news_content ={
+
+	    handlerData:function(resJSON){
+
+	        var template = Handlebars.templates['news'],
+
+	            content = template(resJSON);
+
+				$('#content-news').html(content);
+	        
+	    },
+	    loadContent : function(){
+
+	        $.ajax({
+	            url:"https://lflannery.github.io/headlessAPI/json/news.json",
+	            method:'get',
+	            success:this.handlerData
+
+	        })
+	    } 
+	};
+
+	$(document).ready(function(){
+
+	    news_content.loadContent();
+	});
+
+	//Blog Listing Script
+	var blog_content ={
+
+	    handlerData:function(resJSON){
+
+	        var template = Handlebars.templates['blog'],
+
+	            content = template(resJSON);
+
+				$('#content-blog').html(content);
+	        
+	    },
+	    loadContent : function(){
+
+	        $.ajax({
+	            url:"https://lflannery.github.io/headlessAPI/json/blog.json",
+	            method:'get',
+	            success:this.handlerData
+
+	        })
+	    } 
+	};
+
+	$(document).ready(function(){
+
+	    blog_content.loadContent();
+	});
+
+
+	//Link Helper
+	Handlebars.registerHelper('link', function(title) {
+
+	    url  = title.replace(/[^a-zA-Z0-9 ]/g, "");
+	    result = url.replace(/ /g, "-");
+	    
+	    return new Handlebars.SafeString(result);
+
+	});
+
 });
 
-
-//News Listing Script
-var news_content ={
-
-    handlerData:function(resJSON){
-
-        var template = Handlebars.templates['news'],
-
-            content = template(resJSON);
-
-			$('#content-news').html(content);
-        
-    },
-    loadContent : function(){
-
-        $.ajax({
-            url:"https://lflannery.github.io/headlessAPI/json/news.json",
-            method:'get',
-            success:this.handlerData
-
-        })
-    } 
-};
-
-$(document).ready(function(){
-
-    news_content.loadContent();
-});
-
-//Blog Listing Script
-var blog_content ={
-
-    handlerData:function(resJSON){
-
-        var template = Handlebars.templates['blog'],
-
-            content = template(resJSON);
-
-			$('#content-blog').html(content);
-        
-    },
-    loadContent : function(){
-
-        $.ajax({
-            url:"https://lflannery.github.io/headlessAPI/json/blog.json",
-            method:'get',
-            success:this.handlerData
-
-        })
-    } 
-};
-
-$(document).ready(function(){
-
-    blog_content.loadContent();
-});
-
-Handlebars.registerHelper('link', function(title) {
-
-    url  = title.replace(/[^a-zA-Z0-9 ]/g, "");
-    result = url.replace(/ /g, "-");
-    
-    return new Handlebars.SafeString(result);
-
-});
-
+//Active Navigation Class
 $(function(){
     var current = location.pathname;
     $('#nav li a').each(function(){
