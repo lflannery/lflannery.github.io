@@ -144,7 +144,7 @@ var requirejs, require, define;
                 waitSeconds: 7,
                 baseUrl: "./",
                 paths: {
-                		"handlebars": "./js/lib/handlebars-runtime-v4.0.12",
+                		"handlebars": "./js/lib/handlebars.runtime-v4.0.12",
         				"jquery": "./js/lib/jquery-3.3.1.min",
                 },
                 bundles: {},
