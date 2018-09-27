@@ -1,90 +1,100 @@
-var CONTENT_METHOD ={
+//Main Nav Script
 
-        handlerData:function(resJSON){
+var content = {
+	"link_one" : "Home",
+	"link_two" : "Blog",
+	"link_three": "News"
+}
 
-            var templateSource   = $("#handlebars-blog").html(),
+var template = Handlebars.templates['mainNav'](content);
 
-                template = Handlebars.compile(templateSource),
+$(document.getElementById("main-nav")).append(template);
 
-                content = template(resJSON);
 
-           $('#mainBlog').html(content);
-            
-        },
-        loadContent : function(){
+//Homepage Content Script
+var homepage_content ={
 
-            $.ajax({
-                url:"https://lflannery.github.io/headlessAPI/json/blog.json",
-                method:'get',
-                success:this.handlerData
+    handlerData:function(resJSON){
 
-            })
-        }
+        var template = Handlebars.templates['homepage'],
+
+            content = template(resJSON);
+
+			$('#content-home').html(content);
+        
+    },
+    loadContent : function(){
+
+        $.ajax({
+            url:"https://lflannery.github.io/headlessAPI/json/homepage.json",
+            method:'get',
+            success:this.handlerData
+
+        })
+    } 
 };
 
 $(document).ready(function(){
 
-    CONTENT_METHOD.loadContent();
+    homepage_content.loadContent();
 });
 
-var NEWS_CONTENT_METHOD ={
 
-        handlerData:function(resJSON){
+//News Listing Script
+var news_content ={
 
-            var templateSource   = $("#handlebars-news").html(),
+    handlerData:function(resJSON){
 
-                template = Handlebars.compile(templateSource),
+        var template = Handlebars.templates['news'],
 
-                content = template(resJSON);
+            content = template(resJSON);
 
-           $('#mainNews').html(content);
-            
-        },
-        loadContent : function(){
+			$('#content-news').html(content);
+        
+    },
+    loadContent : function(){
 
-            $.ajax({
-                url:"https://lflannery.github.io/headlessAPI/json/news.json",
-                method:'get',
-                success:this.handlerData
+        $.ajax({
+            url:"https://lflannery.github.io/headlessAPI/json/news.json",
+            method:'get',
+            success:this.handlerData
 
-            })
-        }
+        })
+    } 
 };
 
 $(document).ready(function(){
 
-    NEWS_CONTENT_METHOD.loadContent();
+    news_content.loadContent();
 });
 
+//Blog Listing Script
+var blog_content ={
 
-var HOME_CONTENT_METHOD ={
+    handlerData:function(resJSON){
 
-        handlerData:function(resJSON){
+        var template = Handlebars.templates['blog'],
 
-            var templateSource   = $("#handlebars-home").html(),
+            content = template(resJSON);
 
-                template = Handlebars.compile(templateSource),
+			$('#content-blog').html(content);
+        
+    },
+    loadContent : function(){
 
-                content = template(resJSON);
+        $.ajax({
+            url:"https://lflannery.github.io/headlessAPI/json/blog.json",
+            method:'get',
+            success:this.handlerData
 
-           $('#mainHome').html(content);
-            
-        },
-        loadContent : function(){
-
-            $.ajax({
-                url:"https://lflannery.github.io/headlessAPI/json/homepage.json",
-                method:'get',
-                success:this.handlerData
-
-            })
-        } };
+        })
+    } 
+};
 
 $(document).ready(function(){
 
-    HOME_CONTENT_METHOD.loadContent();
+    blog_content.loadContent();
 });
-
 
 Handlebars.registerHelper('link', function(title) {
 
@@ -95,12 +105,13 @@ Handlebars.registerHelper('link', function(title) {
 
 });
 
-
-/*
-Handlebars.registerHelper('formatDate', function (date, format) {
-    var mmnt = moment(date);
-    return mmnt.format(format);
-});
-
-var helpers = require('handlebars-helpers')();
-*/
+$(function(){
+    var current = location.pathname;
+    $('#nav li a').each(function(){
+        var $this = $(this);
+        // if the current path is like this link, make it active
+        if($this.attr('href').indexOf(current) !== -1){
+            $this.addClass('active');
+        }
+    })
+})

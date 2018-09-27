@@ -5,40 +5,17 @@
  	<link rel="stylesheet" type="text/css" href="css/style.css">
  	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
 </head>
-<header>
-	<nav class="Main-Nav">
-		<ul>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="blog.html" class="Active">Blog</a></li>
-			<li><a href="news.html">News</a></li>
-		</ul>
-	</nav>
-</header>
 <body class="Blog">
+	<header>
+		<div id="main-nav"></div>
+	</header>
 	<h1 class="Page-Title">Blog</h1>
-	<div id="mainBlog">
-		<script id="handlebars-blog" type="x-handlebars-template">
-		{{#each content}}
-			<div class="Listing-Item Clear">
-				{{#if this.thumbnailImage}}
-					<a class="Listing-Thumbnail" href="/blog/{{link this.title}}-{{this.contentId}}">
-					<img src="{{this.thumbnailImage}}" height="500" width="500">
-					</a>
-				{{/if}}
-				<div class="Listing-Info {{#if this.thumbnailImage}}Has-Thumbnail{{/if}}">
-					<a class="Listing-Title Listing-Link" href="/blog/{{link this.title}}-{{this.contentId}}">{{this.title}}</a>
-					{{#if this.abstract}}
-						<p class="Abstract">
-							{{this.abstract}} <a role="presentation" tabindex="-1" class="Listing-Link Learn-More" href="/blog/{{link this.title}}-{{this.contentId}}">Read more</a>
-						</p>
-					{{/if}}
-				</div>
-			</div>
-		{{/each}}
-		</script> 
-	</div>
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.min.js"></script>
- 	<script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
- 	<script type="text/javascript" src="js/script.js"></script>
+	<div id="content-blog"></div>
+
+	<script type="text/javascript" src="js/lib/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/lib/handlebars.runtime-v4.0.12.js"></script>
+    <script type="text/javascript" src="js/lib/require.js"></script>
+	<script type="text/javascript" src="js/templates.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
