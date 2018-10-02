@@ -1,0 +1,78 @@
+{{#each content}}
+<div id="mainHome">
+	<span id="features"></span>
+	<div class="Panel One">
+		<div class="Viewport">
+			<div class="ThreeColumn">
+				<div class="Column One">
+					{{this.feature1heading}}
+					<img class="Feature Image" src="/assets/images/feature1.svg" alt="">
+					{{{this.feature1Content}}}
+				</div>
+				<div class="Column Two">
+					{{this.feature2heading}}
+					<img class="Feature Image" src="/assets/images/feature2.svg" alt="">
+					{{{this.feature2Content}}}
+				</div>
+				<div class="Column Three">
+					{{this.feature3heading}}
+					<img class="Feature Image" src="/assets/images/feature3.svg" alt="">
+					{{{this.feature3Content}}}
+				</div>
+			</div>
+		</div>
+	</div>
+	<span id="clients"></span>
+	<div class="Panel Two">
+		<div class="Viewport">
+			{{this.clientsPanelHeading}}
+			{{{this.clientsPanelContent}}}
+		</div>
+	</div>
+	<span id="salesPitch"></span>
+	<div class="SalesPitch">
+		<div class="Panel Three">
+			<div class="Viewport">
+				<div class="TwoColumn">
+					<div class="Column One">
+						{{{this.salesPitch1Content}}}
+					</div>
+					<div class="Column Two Image">
+						<img src="{{this.salesPitch1Image}}" height="600" width="600" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="Panel Four">
+			<div class="Viewport">
+				<div class="TwoColumn">
+					<div class="Column One Image">
+						<img src="{{this.salesPitch2Image}}" height="600" width="600" alt="">
+					</div>
+					<div class="Column Two">
+						{{{this.salesPitch2Content}}}
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="Panel Five">
+			<div class="Viewport">
+				<div class="TwoColumn">
+					<div class="Column One">
+						{{{this.salesPitch3Content}}}
+					</div>
+					<div class="Column Two Image">
+						<img src="{{this.salesPitch3Image}}" height="600" width="600" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<span id="contact"></span>
+	<div class="Panel Six">
+		<div class="Viewport">
+			{{{this.contactPanelContent}}}
+		</div>
+	<div>		
+</div>
+{{/each}}
