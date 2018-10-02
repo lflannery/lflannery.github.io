@@ -4,15 +4,15 @@ templates['homepage'] = template({"1":function(container,depth0,helpers,partials
     var stack1, alias1=container.lambda, alias2=container.escapeExpression;
 
   return "<div id=\"mainHome\">\r\n	<span id=\"features\"></span>\r\n	<div class=\"Panel One\">\r\n		<div class=\"Viewport\">\r\n			<div class=\"ThreeColumn\">\r\n				<div class=\"Column One\">\r\n					"
-    + alias2(alias1((depth0 != null ? depth0.feature1heading : depth0), depth0))
+    + alias2(alias1((depth0 != null ? depth0.feature1Heading : depth0), depth0))
     + "\r\n					"
     + ((stack1 = alias1((depth0 != null ? depth0.feature1Content : depth0), depth0)) != null ? stack1 : "")
     + "\r\n				</div>\r\n				<div class=\"Column Two\">\r\n					"
-    + alias2(alias1((depth0 != null ? depth0.feature2heading : depth0), depth0))
+    + alias2(alias1((depth0 != null ? depth0.feature2Heading : depth0), depth0))
     + "\r\n					"
     + ((stack1 = alias1((depth0 != null ? depth0.feature2Content : depth0), depth0)) != null ? stack1 : "")
     + "\r\n				</div>\r\n				<div class=\"Column Three\">\r\n					"
-    + alias2(alias1((depth0 != null ? depth0.feature3heading : depth0), depth0))
+    + alias2(alias1((depth0 != null ? depth0.feature3Heading : depth0), depth0))
     + "\r\n					"
     + ((stack1 = alias1((depth0 != null ? depth0.feature3Content : depth0), depth0)) != null ? stack1 : "")
     + "\r\n				</div>\r\n			</div>\r\n		</div>\r\n	</div>\r\n	<span id=\"clients\"></span>\r\n	<div class=\"Panel Two\">\r\n		<div class=\"Viewport\">\r\n			"
