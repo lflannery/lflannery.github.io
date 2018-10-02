@@ -5,15 +5,15 @@ templates['homepage'] = template({"1":function(container,depth0,helpers,partials
 
   return "<div id=\"mainHome\">\r\n	<span id=\"features\"></span>\r\n	<div class=\"Panel One\">\r\n		<div class=\"Viewport\">\r\n			<div class=\"ThreeColumn\">\r\n				<div class=\"Column One\">\r\n					"
     + alias2(alias1((depth0 != null ? depth0.feature1heading : depth0), depth0))
-    + "\r\n					<img class=\"Feature Image\" src=\"/assets/images/feature1.svg\" alt=\"\">\r\n					"
+    + "\r\n					"
     + ((stack1 = alias1((depth0 != null ? depth0.feature1Content : depth0), depth0)) != null ? stack1 : "")
     + "\r\n				</div>\r\n				<div class=\"Column Two\">\r\n					"
     + alias2(alias1((depth0 != null ? depth0.feature2heading : depth0), depth0))
-    + "\r\n					<img class=\"Feature Image\" src=\"/assets/images/feature2.svg\" alt=\"\">\r\n					"
+    + "\r\n					"
     + ((stack1 = alias1((depth0 != null ? depth0.feature2Content : depth0), depth0)) != null ? stack1 : "")
     + "\r\n				</div>\r\n				<div class=\"Column Three\">\r\n					"
     + alias2(alias1((depth0 != null ? depth0.feature3heading : depth0), depth0))
-    + "\r\n					<img class=\"Feature Image\" src=\"/assets/images/feature3.svg\" alt=\"\">\r\n					"
+    + "\r\n					"
     + ((stack1 = alias1((depth0 != null ? depth0.feature3Content : depth0), depth0)) != null ? stack1 : "")
     + "\r\n				</div>\r\n			</div>\r\n		</div>\r\n	</div>\r\n	<span id=\"clients\"></span>\r\n	<div class=\"Panel Two\">\r\n		<div class=\"Viewport\">\r\n			"
     + alias2(alias1((depth0 != null ? depth0.clientsPanelHeading : depth0), depth0))
