@@ -139,8 +139,11 @@ div > .Column {
 /* Header */
 .Header, .Footer {
     padding: 1rem 0;
-    color: #fff;
-    background: #1a1a1a;
+    color: #9B9B9B;
+    background: #fff;
+}
+.Footer {
+    text-align: center;
 }
 .Logo {
     display: block;
@@ -363,6 +366,7 @@ label {
 
 /* Homepage */
 .Panel {
+    padding: 5em 0;
     .Viewport:not(.Features) {
         max-width: 980px;
         margin:0 auto;
