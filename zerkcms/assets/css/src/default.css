@@ -44,6 +44,7 @@ body {
 }
 .Content {
     flex: 1 0 auto;
+    margin-top: -300px;
 }
 .Header, .Footer {
     flex: none;
@@ -186,8 +187,8 @@ div > .Column {
 
 /*---Buttons------*/
 .Button, .Download {
-    font-weight: normal;
-    display: inline-block;
+    font-weight: medium;
+    display: block;
     margin: 1rem 0;
     padding: 2px 20px;
     cursor: pointer;
@@ -198,6 +199,10 @@ div > .Column {
     border: 0;
     border: none;
     background: #fff;
+    border-radius: 20px;
+    width:150px;
+    margin: 1em auto;
+    padding: .8125em 1.625em;
 
     &:hover {
         transition: .3s;
@@ -347,7 +352,14 @@ label {
 
 .Content-Header {
     background: linear-gradient(0deg, rgba(144,90,150,0) 0%, #2C2F5A 100%);
+    text-align:center;
+    height:1024px;
 }
+.Hero-Image {
+    max-width:412px;
+    height:auto;
+}
+
 
 /* Homepage */
 .Panel {

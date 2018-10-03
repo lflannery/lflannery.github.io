@@ -1,9 +1,9 @@
 body {
-    font: 300 16px/1.5 "ITC Franklin Gothic LT Pro",sans-serif;
+    font: 300 16px/1.5 'Pathway Gothic One',sans-serif;
     color: #fff;
 }
 h1, h2, h3, h4, h5, h6 {
-    font: normal 3.4375em/1.5 "ITC Franklin Gothic LT Pro", sans-serif;
+    font: normal 3.4375em/1.5 'Pathway Gothic One', sans-serif;
     margin: 0 0 .5em;
     color: #fff;
 }
@@ -46,6 +46,6 @@ input, textarea {
 
 
 .Fancy-Text {
-    font: 300 3.9375em/1.5 "Laser STD",sans-serif;
+    font: 300 2em/1.5 'Kaushan Script', cursive;
     color: #75DEE3;
 }
