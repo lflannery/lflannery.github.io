@@ -44,6 +44,8 @@ body {
 }
 .Content {
     flex: 1 0 auto;
+}
+.Home .Content {
     margin-top: -300px;
 }
 .Header, .Footer {
@@ -347,10 +349,6 @@ label {
     p {
         margin-top: 0;
         padding-top: 0;
-
-        &:last-child {
-            margin: 0;
-        }
     }
     ul {
         margin-left: 1em;
@@ -422,4 +420,16 @@ label {
     background: linear-gradient(180deg, #6E72A9 0%, #59396A 100%);
 }
 
+/* Submitted */
+.Submitted {
+    text-align: center;
+    p {
+        color: #4a4a4a;
+        max-width: 655px;
+        margin: 0 auto;
+    }
+    h2 {
+        color: #634AAB;
+    }
+}
 /*===[TRUMPS] =======================================================================================*/

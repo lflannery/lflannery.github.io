@@ -26,6 +26,33 @@ $(document).ready(function(){
     homepage_content.loadContent();
 });
 
+var submitted_content ={
+
+    handlerData:function(resJSON){
+
+        var template = Handlebars.templates['submitted'],
+
+            content = template(resJSON);
+
+            $('#content-submitted').html(content);
+        
+    },
+    loadContent : function(){
+
+        $.ajax({
+            url:"https://lflannery.github.io/zerkcms/json/homepage.json",
+            method:'get',
+            success:this.handlerData
+
+        })
+    } 
+};
+
+$(document).ready(function(){
+
+    submitted_content.loadContent();
+});
+
 //Footer
 
 var footer_template = Handlebars.templates['footer'];
