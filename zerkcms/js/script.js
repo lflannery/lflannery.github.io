@@ -31,3 +31,6 @@ $(document).ready(function(){
 var footer_template = Handlebars.templates['footer'];
 
 $(document.getElementById("content-footer")).append(footer_template);
+
+//Form Helper
+HandlebarsFormHelpers.register(Handlebars);
