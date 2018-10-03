@@ -45,7 +45,7 @@ templates['homepage'] = template({"1":function(container,depth0,helpers,partials
     + "\" height=\"600\" width=\"600\" alt=\"\">\r\n						</div>\r\n					</div>\r\n				</div>\r\n			</div>\r\n		</div>\r\n		<span id=\"contact\"></span>\r\n		<div class=\"Panel Six\">\r\n			<div class=\"Viewport\">\r\n				"
     + ((stack1 = alias1((depth0 != null ? depth0.contactPanelContent : depth0), depth0)) != null ? stack1 : "")
     + "\r\n			</div>\r\n			<h3>Inquire Now</h3>\r\n"
-    + ((stack1 = (helpers.form || (depth0 && depth0.form) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"/inquire/submitted",{"name":"form","hash":{"class":"Form Form-contact","id":"contact"},"fn":container.program(2, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + ((stack1 = (helpers.form || (depth0 && depth0.form) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"submitted",{"name":"form","hash":{"class":"Form Form-contact","id":"contact"},"fn":container.program(2, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + "		</div>\r\n	</div>	\r\n</div>\r\n";
 },"2":function(container,depth0,helpers,partials,data) {
     var alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=helpers.helperMissing, alias3=container.escapeExpression;
