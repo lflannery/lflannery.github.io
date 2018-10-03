@@ -1,0 +1,83 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+html {
+    font-size: 100%;
+    overflow-y: scroll;
+
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, form {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+template, [hidden] {
+    display: none;
+}
+input[type='submit'], input[type='reset'], input[type='button'], button, .Button {
+    cursor: pointer;
+}
+
+input {
+    &[type='checkbox'], &[type='radio'] {
+        box-sizing: border-box;
+        padding: 0;
+        cursor: pointer;
+    }
+    &[type='search'] {
+        box-sizing: content-box;
+
+        &::-webkit-search-decoration {
+            -webkit-appearance: none;
+        }
+    }
+}
+button, input, select, label {
+    cursor: pointer;
+}
+button, input, select, textarea {
+    font-size: 100%;
+    margin: 0;
+    vertical-align: baseline;
+}
+button, input {
+    line-height: normal;
+}
+textarea {
+    overflow: auto;
+    max-width: 100%;
+    min-height: 100px;
+    vertical-align: top;
+}
+table {
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+td {
+    vertical-align: top;
+}
+td, th {
+    text-align: left;
+}
+img {
+    max-width: 100%;
+    vertical-align: middle;
+    border: 0;
+}
+form {
+    position: relative;
+}
+iframe {
+    display: block;
+    max-width: 100%;
+}
+address {
+    font-style: normal;
+}

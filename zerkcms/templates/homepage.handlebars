@@ -1,84 +1,95 @@
 {{#each content}}
-<div id="mainHome">
-	<span id="features"></span>
-	<div class="Panel One">
-		<div class="Viewport">
-			<div class="ThreeColumn">
-				<div class="Column One">
-					{{this.feature1Heading}}
-					{{!-- Don't have this yet 
-					<img class="Feature Image" src="/assets/images/feature1.svg" alt="">
-					--}}
-					{{{this.feature1Content}}}
-				</div>
-				<div class="Column Two">
-					{{this.feature2Heading}}
-					{{!-- Don't have this yet 
-					<img class="Feature Image" src="/assets/images/feature2.svg" alt="">
-					--}}
-					{{{this.feature2Content}}}
-				</div>
-				<div class="Column Three">
-					{{this.feature3Heading}}
-					{{!-- Don't have this yet 
-					<img class="Feature Image" src="/assets/images/feature3.svg" alt="">
-					--}}
-					{{{this.feature3Content}}}
-				</div>
-			</div>
-		</div>
+<div class="Content-Header">
+	<div class="Hero-Content">
+		{{{this.heroCaption}}}
+		<img class="Hero-Image" src="{{this.heroImage}}" height="1000" width="1000" alt="">
+		<a class="Button" href="{{this.heroCTALink}}">{{this.heroCTALabel}}</a>
 	</div>
-	<span id="clients"></span>
-	<div class="Panel Two">
-		<div class="Viewport">
-			{{this.clientsPanelHeading}}
-			{{{this.clientsPanelContent}}}
-		</div>
-	</div>
-	<span id="salesPitch"></span>
-	<div class="SalesPitch">
-		<div class="Panel Three">
-			<div class="Viewport">
-				<div class="TwoColumn">
-					<div class="Column One">
-						{{{this.salesPitch1Content}}}
-					</div>
-					<div class="Column Two Image">
-						<img src="{{this.salesPitch1Image}}" height="600" width="600" alt="">
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="Panel Four">
-			<div class="Viewport">
-				<div class="TwoColumn">
-					<div class="Column One Image">
-						<img src="{{this.salesPitch2Image}}" height="600" width="600" alt="">
-					</div>
-					<div class="Column Two">
-						{{{this.salesPitch2Content}}}
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="Panel Five">
-			<div class="Viewport">
-				<div class="TwoColumn">
-					<div class="Column One">
-						{{{this.salesPitch3Content}}}
-					</div>
-					<div class="Column Two Image">
-						<img src="{{this.salesPitch3Image}}" height="600" width="600" alt="">
+</div>
+<div class="Content Layout-body">
+	<div class="Viewport Main">
+		<div class="Content-Body">
+			<span id="features"></span>
+			<div class="Panel One">
+				<div class="Viewport Features">
+					<div class="ThreeColumn">
+						<div class="Column One">
+							<h3>{{this.feature1Heading}}</h3>
+							{{!-- Don't have this yet 
+							<img class="Feature Image" src="/assets/images/feature1.svg" alt="">
+							--}}
+							{{{this.feature1Content}}}
+						</div>
+						<div class="Column Two">
+							<h3>{{this.feature2Heading}}</h3>
+							{{!-- Don't have this yet 
+							<img class="Feature Image" src="/assets/images/feature2.svg" alt="">
+							--}}
+							{{{this.feature2Content}}}
+						</div>
+						<div class="Column Three">
+							<h3>{{this.feature3Heading}}</h3>
+							{{!-- Don't have this yet 
+							<img class="Feature Image" src="/assets/images/feature3.svg" alt="">
+							--}}
+							{{{this.feature3Content}}}
+						</div>
 					</div>
 				</div>
 			</div>
+			<span id="clients"></span>
+			<div class="Panel Two">
+				<div class="Viewport">
+					<h2 class="Page-Subtitle">{{this.clientsPanelHeading}}</h2>
+					{{{this.clientsPanelContent}}}
+				</div>
+			</div>
+			<span id="salesPitch"></span>
+			<div class="SalesPitch">
+				<div class="Panel Three">
+					<div class="Viewport">
+						<div class="TwoColumn">
+							<div class="Column One">
+								{{{this.salesPitch1Content}}}
+							</div>
+							<div class="Column Two Image">
+								<img src="{{this.salesPitch1Image}}" height="600" width="600" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="Panel Four">
+					<div class="Viewport">
+						<div class="TwoColumn">
+							<div class="Column One Image">
+								<img src="{{this.salesPitch2Image}}" height="600" width="600" alt="">
+							</div>
+							<div class="Column Two">
+								{{{this.salesPitch2Content}}}
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="Panel Five">
+					<div class="Viewport">
+						<div class="TwoColumn">
+							<div class="Column One">
+								{{{this.salesPitch3Content}}}
+							</div>
+							<div class="Column Two Image">
+								<img src="{{this.salesPitch3Image}}" height="600" width="600" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<span id="contact"></span>
+			<div class="Panel Six">
+				<div class="Viewport">
+					{{{this.contactPanelContent}}}
+				</div>
+			</div>
 		</div>
-	</div>
-	<span id="contact"></span>
-	<div class="Panel Six">
-		<div class="Viewport">
-			{{{this.contactPanelContent}}}
-		</div>
-	<div>		
+	</div>		
 </div>
 {{/each}}
