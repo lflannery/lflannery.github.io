@@ -44,7 +44,29 @@ templates['homepage'] = template({"1":function(container,depth0,helpers,partials
     + alias2(alias1((depth0 != null ? depth0.salesPitch3Image : depth0), depth0))
     + "\" height=\"600\" width=\"600\" alt=\"\">\r\n						</div>\r\n					</div>\r\n				</div>\r\n			</div>\r\n		</div>\r\n		<span id=\"contact\"></span>\r\n		<div class=\"Panel Six\">\r\n			<div class=\"Viewport\">\r\n				"
     + ((stack1 = alias1((depth0 != null ? depth0.contactPanelContent : depth0), depth0)) != null ? stack1 : "")
-    + "\r\n			</div>\r\n			<h3>Inquire Now</h3>\r\n			<form id=\"contact\" name=\"contact\" class=\"Form Form-contact\" action=\"/\" method=\"post\">\r\n				<div class=\"Field \">\r\n					<input name=\"firstName\" id=\"contact_firstName\" type=\"text\" value=\"\" class=\"Input Hide\">\r\n				</div>\r\n				<div class=\"Field required\">\r\n					<label class=\"Label\" for=\"contact_name\">Name</label>\r\n					<input name=\"name\" id=\"contact_name\" type=\"text\" value=\"\" class=\"Input\" required=\"\">\r\n				</div>\r\n				<div class=\"Field required\">\r\n					<label class=\"Label\" for=\"contact_email\">Email</label>\r\n					<input name=\"email\" id=\"contact_email\" type=\"email\" value=\"\" class=\"Input\" required=\"\">\r\n				</div>\r\n				<div class=\"Field required\">\r\n					<label class=\"Label\" for=\"contact_message\">Message</label>\r\n					<textarea name=\"message\" id=\"contact_message\" class=\"Input\" required=\"\"></textarea>\r\n				</div>\r\n				<div class=\"Field \">\r\n					<label class=\"Checkbox\">\r\n					<input type=\"checkbox\" name=\"emailUpdates\" value=\"Yes \">\r\n					<span class=\"Checkbox-Text\">I want to receive email updates from Zerk</span></label>\r\n				</div>\r\n				<div class=\"Field FieldAction\">\r\n					<button class=\"Button\" name=\"contactAction\" type=\"submit\"><span class=\"Button-Text\">Send</span></button>\r\n				</div>\r\n			</form>\r\n		</div>\r\n	</div>	\r\n</div>\r\n";
+    + "\r\n			</div>\r\n			<h3>Inquire Now</h3>\r\n"
+    + ((stack1 = (helpers.form || (depth0 && depth0.form) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"/inquire/submitted",{"name":"form","hash":{"class":"Form Form-contact","id":"contact"},"fn":container.program(2, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "		</div>\r\n	</div>	\r\n</div>\r\n";
+},"2":function(container,depth0,helpers,partials,data) {
+    var alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=helpers.helperMissing, alias3=container.escapeExpression;
+
+  return "				<div class=\"Field required\">\r\n					"
+    + alias3((helpers.label || (depth0 && depth0.label) || alias2).call(alias1,"contact_name","Name",{"name":"label","hash":{"class":"Label"},"data":data}))
+    + "\r\n					"
+    + alias3((helpers.input || (depth0 && depth0.input) || alias2).call(alias1,"contact_name","",{"name":"input","hash":{"class":"Input"},"data":data}))
+    + "\r\n				</div>\r\n				<div class=\"Field required\">\r\n					"
+    + alias3((helpers.label || (depth0 && depth0.label) || alias2).call(alias1,"contact_email","Email",{"name":"label","hash":{"class":"Label"},"data":data}))
+    + "\r\n					"
+    + alias3((helpers.input || (depth0 && depth0.input) || alias2).call(alias1,"contact_email","",{"name":"input","hash":{"class":"Input"},"data":data}))
+    + "\r\n				</div>\r\n				<div class=\"Field required\">\r\n					"
+    + alias3((helpers.label || (depth0 && depth0.label) || alias2).call(alias1,"contact_message","Message",{"name":"label","hash":{"class":"Label"},"data":data}))
+    + "\r\n					"
+    + alias3((helpers.textarea || (depth0 && depth0.textarea) || alias2).call(alias1,"contact_Message","",{"name":"textarea","hash":{"class":"Input"},"data":data}))
+    + "\r\n				</div>\r\n				<div class=\"Field\">\r\n					<label class=\"Checkbox\">\r\n						"
+    + alias3((helpers.checkbox || (depth0 && depth0.checkbox) || alias2).call(alias1,"contact_emailUpdates","yes","true",{"name":"checkbox","hash":{},"data":data}))
+    + "\r\n						<span class=\"Checkbox-Text\">I want to receive email updates from Zerk</span>\r\n					</label>\r\n				</div>\r\n				<div class=\"Field FieldAction\">\r\n					"
+    + alias3((helpers.submit || (depth0 && depth0.submit) || alias2).call(alias1,"contactAction","Send",{"name":"submit","hash":{},"data":data}))
+    + "\r\n				</div>\r\n";
 },"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     var stack1;
 

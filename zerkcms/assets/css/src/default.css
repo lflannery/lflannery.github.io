@@ -189,8 +189,8 @@ div > .Column {
 }
 
 /*---Buttons------*/
-.Button, .Download {
-    font-weight: medium;
+button, .Button, .Download {
+    font-weight: bold;
     display: block;
     margin: 1rem 0;
     padding: 2px 20px;
@@ -268,7 +268,7 @@ label {
     padding: 9px 10px;
     border: 1px solid #FFFFFF;
     background: transparent;
-    color: #fff;
+    color: #4a4a4a;
     &:hover,&:focus {
         background:#fff;
         outline: none;
