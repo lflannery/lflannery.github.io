@@ -1,7 +1,7 @@
 (function() {
   var template = Handlebars.template, templates = Handlebars.templates = Handlebars.templates || {};
 templates['footer'] = template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
-    return "<div class=\"Viewport\">\r\n	<div class=\"Credits\">\r\n		<script type=\"text/javascript\">document.write(new Date().getFullYear());</script> ZerkCMS. All rights reserved.\r\n	</div>\r\n</div>";
+    return "<div class=\"Credits\">\r\n	<script type=\"text/javascript\">document.write(new Date().getFullYear());</script> ZerkCMS. All rights reserved.\r\n</div>\r\n";
 },"useData":true});
 templates['homepage'] = template({"1":function(container,depth0,helpers,partials,data) {
     var stack1, alias1=container.lambda, alias2=container.escapeExpression;
@@ -44,7 +44,7 @@ templates['homepage'] = template({"1":function(container,depth0,helpers,partials
     + alias2(alias1((depth0 != null ? depth0.salesPitch3Image : depth0), depth0))
     + "\" height=\"600\" width=\"600\" alt=\"\">\r\n						</div>\r\n					</div>\r\n				</div>\r\n			</div>\r\n		</div>\r\n		<span id=\"contact\"></span>\r\n		<div class=\"Panel Six\">\r\n			<div class=\"Viewport\">\r\n				"
     + ((stack1 = alias1((depth0 != null ? depth0.contactPanelContent : depth0), depth0)) != null ? stack1 : "")
-    + "\r\n			</div>\r\n		</div>\r\n	</div>	\r\n</div>\r\n";
+    + "\r\n			</div>\r\n			<h3>Inquire Now</h3>\r\n			<form id=\"contact\" name=\"contact\" class=\"Form Form-contact\" action=\"/\" method=\"post\">\r\n				<div class=\"Field \">\r\n					<input name=\"firstName\" id=\"contact_firstName\" type=\"text\" value=\"\" class=\"Input Hide\">\r\n				</div>\r\n				<div class=\"Field required\">\r\n					<label class=\"Label\" for=\"contact_name\">Name</label>\r\n					<input name=\"name\" id=\"contact_name\" type=\"text\" value=\"\" class=\"Input\" required=\"\">\r\n				</div>\r\n				<div class=\"Field required\">\r\n					<label class=\"Label\" for=\"contact_email\">Email</label>\r\n					<input name=\"email\" id=\"contact_email\" type=\"email\" value=\"\" class=\"Input\" required=\"\">\r\n				</div>\r\n				<div class=\"Field required\">\r\n					<label class=\"Label\" for=\"contact_message\">Message</label>\r\n					<textarea name=\"message\" id=\"contact_message\" class=\"Input\" required=\"\"></textarea>\r\n				</div>\r\n				<div class=\"Field \">\r\n					<label class=\"Checkbox\">\r\n					<input type=\"checkbox\" name=\"emailUpdates\" value=\"Yes \">\r\n					<span class=\"Checkbox-Text\">I want to receive email updates from Zerk</span></label>\r\n				</div>\r\n				<div class=\"Field FieldAction\">\r\n					<button class=\"Button\" name=\"contactAction\" type=\"submit\"><span class=\"Button-Text\">Send</span></button>\r\n				</div>\r\n			</form>\r\n		</div>\r\n	</div>	\r\n</div>\r\n";
 },"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     var stack1;
 

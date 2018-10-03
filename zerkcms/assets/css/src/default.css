@@ -166,7 +166,7 @@ div > .Column {
 
 /* Footer */
 .Footer {
-    padding-bottom: 2rem;
+    padding-bottom: 0;
 }
 .Credits {
     font-size: .8em;
@@ -208,9 +208,8 @@ div > .Column {
     padding: .8125em 1.625em;
 
     &:hover {
-        transition: .3s;
-        color: #fff;
-        background: #000;
+        color: #4A4A4A;
+        background: #EBBC0F;
     }
 }
 
@@ -261,17 +260,27 @@ div > .Column {
 label {
     display: block;
     margin-bottom: 4px;
+    text-align: left;
+    font-size: 1.25em;
 }
 .Input, .Select {
     width: 100%;
     padding: 9px 10px;
-    border: 1px solid #dbdbdb;
+    border: 1px solid #FFFFFF;
+    background: transparent;
+    color: #fff;
+    &:hover,&:focus {
+        background:#fff;
+        outline: none;
+    }
 }
 .Select {
     padding: 8px 10px;
 }
 .Field {
-    margin: 0 0 1rem;
+    margin: 0 auto 1rem;
+    max-width: 360px;
+
 }
 
 /* Inline Form */

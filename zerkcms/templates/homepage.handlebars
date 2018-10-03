@@ -87,6 +87,32 @@
 			<div class="Viewport">
 				{{{this.contactPanelContent}}}
 			</div>
+			<h3>Inquire Now</h3>
+			<form id="contact" name="contact" class="Form Form-contact" action="/" method="post">
+				<div class="Field ">
+					<input name="firstName" id="contact_firstName" type="text" value="" class="Input Hide">
+				</div>
+				<div class="Field required">
+					<label class="Label" for="contact_name">Name</label>
+					<input name="name" id="contact_name" type="text" value="" class="Input" required="">
+				</div>
+				<div class="Field required">
+					<label class="Label" for="contact_email">Email</label>
+					<input name="email" id="contact_email" type="email" value="" class="Input" required="">
+				</div>
+				<div class="Field required">
+					<label class="Label" for="contact_message">Message</label>
+					<textarea name="message" id="contact_message" class="Input" required=""></textarea>
+				</div>
+				<div class="Field ">
+					<label class="Checkbox">
+					<input type="checkbox" name="emailUpdates" value="Yes ">
+					<span class="Checkbox-Text">I want to receive email updates from Zerk</span></label>
+				</div>
+				<div class="Field FieldAction">
+					<button class="Button" name="contactAction" type="submit"><span class="Button-Text">Send</span></button>
+				</div>
+			</form>
 		</div>
 	</div>	
 </div>
