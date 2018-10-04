@@ -1,9 +1,10 @@
 body {
-    font: 300 16px/1.5 'Pathway Gothic One',sans-serif;
+    font: 300 16px/1.5 'ITC Franklin Gothic LT Pro',sans-serif;
     color: #fff;
 }
 h1, h2, h3, h4, h5, h6 {
-    font: normal 3.4375em/1.5 'Pathway Gothic One', sans-serif;
+    font: 500 3.4375em/1.5 'ITC Franklin Gothic LT Pro', sans-serif;
+    font-stretch: condensed;
     margin: 0 0 .5em;
     color: #fff;
 }
@@ -38,12 +39,12 @@ a {
 }
 
 /*Forms*/
-label {
-    font-size: 1.25em;
+label, .Input, .Select {
+    font: 300 1.25em/1.5 'ITC Franklin Gothic LT Pro',sans-serif;
+    font-stretch: condensed;
 }
 .Input, .Select {
     color:#fff;
-    font-family: 'Pathway Gothic One', sans-serif;
     &:hover,&:focus {
         color: #4a4a4a;
     }
@@ -57,7 +58,8 @@ input, textarea {
 
 
 .Fancy-Text {
-    font: 300 2em/1.5 'Kaushan Script', cursive;
+    font: normal 1.5em/1.5 'Laser STD', cursive;
+    text-shadow: 0 2px 7px rgba(0,0,0,0.5);
     color: #75DEE3;
 }
 
