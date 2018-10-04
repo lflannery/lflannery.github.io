@@ -381,6 +381,9 @@ label {
         margin: 0 auto;
         text-align: center;
         background: #6E72A9;
+        .Column {
+            padding: 2em!important;
+        }
     }
     &.Two {
         background: #fff;

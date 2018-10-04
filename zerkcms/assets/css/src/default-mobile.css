@@ -150,6 +150,11 @@
     }
     &.One {
         max-width: 90%;
+        .Column {
+            &:not(:last-child) {
+                border-bottom: 1px solid #513D8A;
+            }
+        }
     }
     img {
         height:100%;

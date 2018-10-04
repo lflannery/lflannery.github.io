@@ -104,5 +104,11 @@
     .Column:not(.Image) {
         padding: 4em 0;
     }
+    &.One .Column {
+        &:not(:last-child) {
+            border-right: 1px solid #513D8A;
+        }
+    }
 }
+
 /*===[TRUMPS] =======================================================================================*/
