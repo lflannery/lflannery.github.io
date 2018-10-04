@@ -45,13 +45,10 @@ body {
 .Content {
     flex: 1 0 auto;
 }
-.Home .Content {
-    margin-top: 300px;
-}
 .Header, .Footer {
     flex: none;
 }
-.Viewport, .ScrollGallery-Content, .Alert-Viewport {
+.Viewport {
     position: relative;
     margin: 0 auto;
     padding: 0 2rem;
@@ -154,11 +151,6 @@ div > .Column {
     img {
         position: relative;
     }
-}
-.Header-Search {
-    position: absolute;
-    top: 0;
-    right: 0;
 }
 
 .Header-Image {
@@ -365,6 +357,9 @@ body {
     height:1024px;
     padding-top: 3em;
 }
+.Content-Header {
+    margin-top: 5em;
+}
 .Hero-Image {
     width:412px;
     height:auto;
@@ -372,6 +367,9 @@ body {
 
 
 /* Homepage */
+.Home .Content {
+    margin-top: 15em;
+}
 .Panel {
     .Viewport:not(.Features) {
         max-width: 980px;

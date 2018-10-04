@@ -143,6 +143,9 @@
 }
 
 /*---Homepage------*/
+.Home .Content {
+    margin-top: 7em;
+}
 .Panel {
     .Column.Image {
         order: -1;
