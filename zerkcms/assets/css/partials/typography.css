@@ -37,6 +37,17 @@ a {
     }
 }
 
+/*Forms*/
+label {
+    font-size: 1.25em;
+}
+.Input, .Select {
+    color:#fff;
+    font-family: 'Pathway Gothic One', sans-serif;
+    &:hover,&:focus {
+        color: #4a4a4a;
+    }
+}
 /*Input placeholders*/
 input, textarea {
     &:-moz-placeholder, &::-webkit-input-placeholder {

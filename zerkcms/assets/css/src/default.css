@@ -263,14 +263,12 @@ label {
     display: block;
     margin-bottom: 4px;
     text-align: left;
-    font-size: 1.25em;
 }
 .Input, .Select {
     width: 100%;
     padding: 9px 10px;
     border: 1px solid #FFFFFF;
     background: transparent;
-    color: #4a4a4a;
     &:hover,&:focus {
         background:#fff;
         outline: none;
