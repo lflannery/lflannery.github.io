@@ -414,9 +414,6 @@ body {
 
 /* Submitted */
 .Submitted .Content {
-    background: linear-gradient(0deg,rgba(144,90,150,0),#2c2f5a);
-    padding: 10em 0;
-    text-align: center;
     p {
         max-width: 655px;
         margin: 0 auto;
