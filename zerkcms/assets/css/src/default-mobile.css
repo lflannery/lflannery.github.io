@@ -104,45 +104,16 @@
         span {
             width: 18px;
             height: 18px;
-            background-image: url('/assets/images/icons/close.svg');
         }
     }
 }
 
-.Menu-Button span {
-    background-image: url('/assets/images/icons/menu.svg');
-}
-.Search-Button span {
-    width: 18px;
-    height: 18px;
-    background-image: url('/assets/images/icons/search.svg');
-}
-
-/* Search */
-.Header-Search {
-    position: absolute;
-    z-index: 1;
-    top: 80px;
-    right: 0;
-    left: 0;
-    display: none;
-    padding: 1rem;
-    background: #f2f2f2;
-
-    &.Expanded {
-        display: block;
-    }
-    .Form-Wrapper {
-        margin: 0;
-    }
-}
-
-.Inline-Form .Button-Text {
-    background: url('/assets/images/icons/search.svg');
-}
-
 .Header-Image {
     height: 75vw;
+}
+.Hero-Content {
+    max-width: 90%;
+    margin: auto;
 }
 
 /*Footer*/
@@ -166,115 +137,28 @@
     margin-bottom: 1em;
 }
 
-/*---Gallery------*/
-.ScrollGallery {
-    position: relative;
-    width: 100%;
-
-    &-Thumbnail {
-        width: 100%;
-    }
-    &-Item {
-        background-repeat: no-repeat;
-        background-position: top center;
-        background-size: cover;
-    }
+/*---Forms------*/
+.Form {
+    max-width:90%;
+    margin: auto;
 }
 
-.slick-slider .slick-list, .slick-track, .slick-slide, .slick-slide img {
-    transform: translate3d(0, 0, 0);
-}
-.slick-slider {
-    position: relative;
-    display: block;
-    box-sizing: border-box;
-    user-select: none;
-
-    -webkit-touch-callout: none;
-    touch-action: none;
-    -webkit-tap-highlight-color: transparent;
-}
-.slick-list {
-    position: relative;
-    display: block;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
-
-    &:focus {
-        outline: none;
+/*---Homepage------*/
+.Panel {
+    .Column.Image {
+        order: -1;
     }
-    &.dragging {
-        cursor: pointer;
-        cursor: hand;
+    &.One {
+        max-width: 90%;
+    }
+    img {
+        height:100%;
+    }
+    &.Six,&.Two {
+        padding-bottom: 5em;
     }
 }
-.slick-track {
-    position: relative;
-    top: 0;
-    left: 0;
-    display: block;
-    zoom: 1;
-
-    &:before, &:after {
-        display: table;
-        content: '';
-    }
-    &:after {
-        clear: both;
-    }
-    .slick-loading & {
-        visibility: hidden;
-    }
+.SalesPitch {
+    padding-top: 5em;
 }
-
-.ScrollGallery-Thumbnail, .slick-slide img {
-    display: inline-block;
-    width: 100%;
-}
-.slick-slide {
-    display: none;
-    float: left;
-    height: 100%;
-    min-height: 1px;
-
-    &.slick-loading img {
-        display: none;
-    }
-    &.dragging img {
-        pointer-events: none;
-    }
-    .slick-initialized & {
-        display: block;
-    }
-    .slick-loading & {
-        visibility: hidden;
-    }
-    .slick-vertical & {
-        display: block;
-        height: auto;
-        border: 1px solid transparent;
-    }
-}
-.slick-prev, .slick-next, .slick-dots {
-    display: none !important;
-}
-
-.Gallery-List {
-    list-style-type: none;
-
-    .Product-Image {
-        text-align: center;
-
-        img {
-            width: 100px;
-            max-width: 100px;
-            text-align: center;
-        }
-    }
-}
-.Gallery-Image {
-    width: 100%;
-}
-
 /*===[TRUMPS] =======================================================================================*/

@@ -365,14 +365,13 @@ label {
     padding: 10em 0;
 }
 .Hero-Image {
-    max-width:412px;
+    width:412px;
     height:auto;
 }
 
 
 /* Homepage */
 .Panel {
-    padding: 5em 0;
     .Viewport:not(.Features) {
         max-width: 980px;
         margin:0 auto;
@@ -395,21 +394,9 @@ label {
             margin: 0 auto;
         }
     }
-    &.Four {
-        .Column.Image {
-            padding: 4em;
-        }
-    }
     &.Six {
         background: #6E72A9;
         text-align: center;
-    }
-    img {
-        width: auto;
-        max-height:250px;
-    }
-    .Column:not(.Image) {
-        padding: 4em 0;
     }
     .Column.Image {
         text-align:center;

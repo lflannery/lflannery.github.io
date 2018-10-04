@@ -60,3 +60,9 @@ input, textarea {
     font: 300 2em/1.5 'Kaushan Script', cursive;
     color: #75DEE3;
 }
+
+@media screen and (max-width: 767px) {
+    .Fancy-Text {
+        font-size: 1.7em;
+    }
+}

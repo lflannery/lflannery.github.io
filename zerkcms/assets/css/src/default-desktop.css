@@ -94,4 +94,15 @@
     }
 }
 
+/*---Homepage------*/
+.Panel {
+    padding: 5em 0;
+    img {
+        width: auto;
+        max-height:250px;
+    }
+    .Column:not(.Image) {
+        padding: 4em 0;
+    }
+}
 /*===[TRUMPS] =======================================================================================*/
