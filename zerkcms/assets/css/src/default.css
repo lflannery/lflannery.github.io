@@ -398,7 +398,7 @@ label {
         }
     }
     &.Six {
-        background: #6E72A9;
+        background: url(/assets/images/background-inquire.png);
         text-align: center;
     }
     .Column.Image {
