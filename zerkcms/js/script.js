@@ -59,5 +59,11 @@ var footer_template = Handlebars.templates['footer'];
 
 $(document.getElementById("content-footer")).append(footer_template);
 
+//Header
+
+var header_template = Handlebars.templates['header'];
+
+$(document.getElementById("content-header")).append(header_template);
+
 //Form Helper
 HandlebarsFormHelpers.register(Handlebars);

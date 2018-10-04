@@ -46,7 +46,7 @@ body {
     flex: 1 0 auto;
 }
 .Home .Content {
-    margin-top: -150px;
+    margin-top: 300px;
 }
 .Header, .Footer {
     flex: none;
@@ -139,7 +139,7 @@ div > .Column {
 
 /*---Header-Footer------*/
 /* Header */
-.Header, .Footer {
+.Footer {
     padding: 1rem 0;
     color: #9B9B9B;
     background: #fff;
@@ -358,12 +358,12 @@ label {
     }
 }
 
-.Content-Header {
+body {
     background: url(https://lflannery.github.io/zerkcms/assets/images/background-hero.png) no-repeat;
     background-size: cover;
     text-align:center;
     height:1024px;
-    padding: 10em 0;
+    padding-top: 3em;
 }
 .Hero-Image {
     width:412px;

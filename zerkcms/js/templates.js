@@ -3,6 +3,9 @@
 templates['footer'] = template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     return "<div class=\"Credits\">\r\n	<script type=\"text/javascript\">document.write(new Date().getFullYear());</script> ZerkCMS. All rights reserved.\r\n</div>\r\n";
 },"useData":true});
+templates['header'] = template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
+    return "<div class=\"Viewport\">\r\n	<div class=\"Logo\">\r\n		<a href=\"/\">\r\n			<img src=\"assets/images/logo-light.svg\" alt=\"ZerkCMS Logo\">\r\n		</a>\r\n	</div>\r\n</div>\r\n";
+},"useData":true});
 templates['homepage'] = template({"1":function(container,depth0,helpers,partials,data) {
     var stack1, alias1=container.lambda, alias2=container.escapeExpression;
 
@@ -16,15 +19,15 @@ templates['homepage'] = template({"1":function(container,depth0,helpers,partials
     + alias2(alias1((depth0 != null ? depth0.heroCTALabel : depth0), depth0))
     + "</a>\r\n	</div>\r\n</div>\r\n<div class=\"Content Layout-body\">\r\n	<div class=\"Content-Body\">\r\n		<span id=\"features\"></span>\r\n		<div class=\"Panel One\">\r\n			<div class=\"Features\">\r\n				<div class=\"ThreeColumn\">\r\n					<div class=\"Column One\">\r\n						<h3>"
     + alias2(alias1((depth0 != null ? depth0.feature1Heading : depth0), depth0))
-    + "</h3>\r\n						"
+    + "</h3>\r\n						<img class=\"Feature Image\" src=\"assets/images/icon-fast-easy.svg\" alt=\"\">\r\n						"
     + ((stack1 = alias1((depth0 != null ? depth0.feature1Content : depth0), depth0)) != null ? stack1 : "")
     + "\r\n					</div>\r\n					<div class=\"Column Two\">\r\n						<h3>"
     + alias2(alias1((depth0 != null ? depth0.feature2Heading : depth0), depth0))
-    + "</h3>\r\n						"
+    + "</h3>\r\n						<img class=\"Feature Image\" src=\"assets/images/icon-powerful.svg\" alt=\"\">\r\n						"
     + ((stack1 = alias1((depth0 != null ? depth0.feature2Content : depth0), depth0)) != null ? stack1 : "")
     + "\r\n					</div>\r\n					<div class=\"Column Three\">\r\n						<h3>"
     + alias2(alias1((depth0 != null ? depth0.feature3Heading : depth0), depth0))
-    + "</h3>\r\n						"
+    + "</h3>\r\n						<img class=\"Feature Image\" src=\"assets/images/icon-secure.svg\" alt=\"\">\r\n						"
     + ((stack1 = alias1((depth0 != null ? depth0.feature3Content : depth0), depth0)) != null ? stack1 : "")
     + "\r\n					</div>\r\n				</div>\r\n			</div>\r\n		</div>\r\n		<span id=\"clients\"></span>\r\n		<div class=\"Panel Two\">\r\n			<div class=\"Viewport\">\r\n				<h2 class=\"Page-Subtitle\">"
     + alias2(alias1((depth0 != null ? depth0.clientsPanelHeading : depth0), depth0))
