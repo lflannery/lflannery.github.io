@@ -14,7 +14,7 @@ templates['homepage'] = template({"1":function(container,depth0,helpers,partials
     + alias2(alias1((depth0 != null ? depth0.heroCTALink : depth0), depth0))
     + "\">"
     + alias2(alias1((depth0 != null ? depth0.heroCTALabel : depth0), depth0))
-    + "</a>\r\n	</div>\r\n</div>\r\n<div class=\"Content Layout-body\">\r\n	<div class=\"Content-Body\">\r\n		<span id=\"features\"></span>\r\n		<div class=\"Panel One\">\r\n			<div class=\"Viewport Features\">\r\n				<div class=\"ThreeColumn\">\r\n					<div class=\"Column One\">\r\n						<h3>"
+    + "</a>\r\n	</div>\r\n</div>\r\n<div class=\"Content Layout-body\">\r\n	<div class=\"Content-Body\">\r\n		<span id=\"features\"></span>\r\n		<div class=\"Panel One\">\r\n			<div class=\"Features\">\r\n				<div class=\"ThreeColumn\">\r\n					<div class=\"Column One\">\r\n						<h3>"
     + alias2(alias1((depth0 != null ? depth0.feature1Heading : depth0), depth0))
     + "</h3>\r\n						"
     + ((stack1 = alias1((depth0 != null ? depth0.feature1Content : depth0), depth0)) != null ? stack1 : "")
