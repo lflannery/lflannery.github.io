@@ -377,7 +377,7 @@ label {
         margin:0 auto;
     }
     &.One {
-        max-width: 1226px;
+        max-width: 95%;
         margin: 0 auto;
         text-align: center;
         background: #6E72A9;
