@@ -398,7 +398,8 @@ label {
         }
     }
     &.Six {
-        background: url(/assets/images/background-inquire.png);
+        background: url(https://lflannery.github.io/zerkcms/assets/images/background-inquire.png) no-repeat;
+        background-size: cover;
         text-align: center;
     }
     .Column.Image {

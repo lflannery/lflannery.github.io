@@ -1,0 +1,21 @@
+/*@import url("http://fast.fonts.net/t/1.css?apiType=css&projectid=13fea448-580d-48f8-8471-dca51d43fd3a");*/
+@font-face{
+    font-family:"ITC Franklin Gothic LT W01 Bk";
+    src:url("Fonts/00faf685-e292-40f6-8318-fce19d0576b1.eot?#iefix");
+    src:url("Fonts/00faf685-e292-40f6-8318-fce19d0576b1.eot?#iefix") format("eot"),url("Fonts/35d6841f-a247-4989-95f3-b023bab7c876.woff2") format("woff2"),url("Fonts/e0c48fbf-6e3e-4d4a-8443-7905cf3d47f4.woff") format("woff"),url("Fonts/52a8cfe0-c0a3-4424-80ae-baf160636666.ttf") format("truetype");
+}
+@font-face{
+    font-family:"ITC Franklin Gothic LT W01BkCn";
+    src:url("Fonts/f1c68698-0462-43d2-94f5-eab3273cdf99.eot?#iefix");
+    src:url("Fonts/f1c68698-0462-43d2-94f5-eab3273cdf99.eot?#iefix") format("eot"),url("Fonts/372b62d1-1266-4226-a5cc-22201cb1f770.woff2") format("woff2"),url("Fonts/ec9fc863-ec1c-485e-8238-d37e5dc9b8eb.woff") format("woff"),url("Fonts/0e810e56-b457-4a4e-aa8a-341f6d3c9375.ttf") format("truetype");
+}
+@font-face{
+    font-family:"ITC Franklin Gothic LT W01MdCn";
+    src:url("Fonts/f5060fb0-640b-49c7-91f6-6cfb8107b63f.eot?#iefix");
+    src:url("Fonts/f5060fb0-640b-49c7-91f6-6cfb8107b63f.eot?#iefix") format("eot"),url("Fonts/dea9866d-74ee-4301-8435-549191bd27ae.woff2") format("woff2"),url("Fonts/317d0bb8-b9d0-46d8-bfdc-4c2241548da5.woff") format("woff"),url("Fonts/cb734014-2971-43de-957a-82059d039c14.ttf") format("truetype");
+}
+@font-face{
+    font-family:"Laser W05 Regular";
+    src:url("Fonts/ec8d31f2-b533-480e-84f5-6ffd30496099.eot?#iefix");
+    src:url("Fonts/ec8d31f2-b533-480e-84f5-6ffd30496099.eot?#iefix") format("eot"),url("Fonts/d72fc809-7392-4d2d-87e8-f1fdf365f4af.woff2") format("woff2"),url("Fonts/1d59fb6c-c1f3-4e1b-a1fc-aa3ced883ae3.woff") format("woff"),url("Fonts/34de2e6b-e5e6-4394-8cf3-78e47dc7c94d.ttf") format("truetype");
+}
