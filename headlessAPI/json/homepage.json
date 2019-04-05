@@ -1,46 +1,7 @@
+
+
 {
   "status": 200,
-  "content": [
-    {
-      "detailPageUrlText": "",
-      "metaTitle": "",
-      "gallery": "[{\"type\":\"image\",\"url\":\"https://bigsister.images.stage4.getfused.com/Homepage-Rotator-Mission.jpg?w1024-h465-x0-y117\",\"title\":\"Big Sister of Greater Boston\",\"caption\":\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. In porta erat eleifend metus accumsan placerat. Donec gravida tellus sit amet ligula interdum, nec lobortis arcu aliquet. Quisque luctus pellentesque lectus non pulvinar. \",\"linkUrl\":\"/contact-us\",\"linkText\":\"Learn More\"},{\"type\":\"image\",\"url\":\"https://bigsister.images.stage4.getfused.com/Maren.jpg?w1903-h865-x11-y96\"}]",
-      "isOriginService": 1,
-      "previewUrl": "",
-      "metaKeywords": "",
-      "image2": "https://bigsister.images.stage4.getfused.com/Enroll-a-Girl.png",
-      "contentDefinitionTitle": "Homepage",
-      "dateCreated": "February, 01 2016 11:12:07 +0000",
-      "publishDate": "February, 01 2016 11:12:00 +0000",
-      "metaDescription": "",
-      "contentBlock2": "<h2 class=\"Page-Subtitle\">Enroll a girl</h2>\r\n\r\n<p>Big Sister proudly accepts referrals from parents, grandparents, teachers, guidance counselors, other family members and service providers.</p>\r\n\r\n<p><a href=\"/enroll-a-girl\">Get Started</a></p>\r\n",
-      "serviceId": 2,
-      "contentStatusTitle": "Live",
-      "detailPageUrl": "",
-      "mobileImage": "https://bigsister.images.stage4.getfused.com/BFAD-Judy-Keefe-and-Desiree.jpg?w295-h295-x0-y0",
-      "lastModifiedBy": "gfplatform@getfused.com",
-      "overrideUrl": "",
-      "originalContentId": 233,
-      "contentBlock1": "<h2 class=\"Page-Subtitle\">Get Involved</h2>\r\n\r\n<p>There are many ways to get involved with Big Sister to help us better serve girls - and we are grateful you&#39;ve chosen to learn more!</p>\r\n\r\n<p><a href=\"/become-a-big-sister\">Make an Impact</a></p>\r\n",
-      "popNewWindow": 0,
-      "createdBy": "",
-      "contentId": 233,
-      "contentDefinitionName": "homepage",
-      "lastModified": "May, 09 2016 10:42:20 +0000",
-      "systemName": "homepage",
-      "expireDate": "",
-      "image3": "https://bigsister.images.stage4.getfused.com/Donate.png",
-      "image1": "https://bigsister.images.stage4.getfused.com/Get-Involved.png",
-      "contentBlock3": "<h2 class=\"Page-Subtitle\">Donate</h2>\r\n\r\n<p>Big Sister raises 85% of our annual operating budget through private philanthropy. Your donation ensures the lasting impact of our organization on Greater Boston&#39;s girls.</p>\r\n\r\n<p><a href=\"/donate\">Ways to Help</a></p>\r\n",
-      "title": "Homepage",
-      "contentDefinitionId": 15,
-      "body": "<h1 class=\"Page-Title\">Mission</h1>\r\n\r\n<p>We ignite girls&#39; passion and power to succeed through positive mentoring relationships with women and enrichment programs that support girls&#39; healthy development.&nbsp;</p>\r\n",
-      "serviceName": "www",
-      "contentStatusId": 1,
-      "contentStatusName": "live"
-    }
-  ],
-  "messages": [
-
-  ]
+  "content": [{"rank":1,"detailPageUrlText":"","detail":"<p>[Detail]&nbsp;Lorem ipsum dolor sit amet, <strong>consectetur adipiscing elit</strong>. Aenean euismod bibendum laoreet. <em>Proin gravida dolor</em> sit amet lacus accumsan et viverra justo commodo. <u>Proin sodales pulvinar tempor</u>. Sociis natoque <s>penatibus et magnis</s> dis parturient montes<sup>super script</sup>, nascetur ridiculus<sub>sub script</sub>&nbsp;mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio.</p>\r\n\r\n<ul>\r\n\t<li>Lorem ipsum dolor sit amet</li>\r\n\t<li>Consectetur adipiscing elit</li>\r\n\t<li>Aenean euismod bibendum</li>\r\n\t<li>Proin gravida dolor sit amet</li>\r\n\t<li>Lacus accumsan et viverra justo commodo.</li>\r\n</ul>\r\n\r\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio.</p>\r\n\r\n<ol>\r\n\t<li>Proin sodales pulvinar tempor</li>\r\n\t<li>Sociis natoque penatibus et magnis</li>\r\n\t<li>Dis parturient montes</li>\r\n\t<li>Nascetur ridiculus mus</li>\r\n\t<li>Nam fermentum, nulla luctus pharetra</li>\r\n</ol>\r\n\r\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio</p>\r\n\r\n<h2>Heading 2</h2>\r\n\r\n<h3>Heading 3</h3>\r\n\r\n<h4>Heading 4</h4>\r\n\r\n<h5>Heading 5</h5>\r\n\r\n<h6>Heading 6</h6>\r\n\r\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio</p>\r\n\r\n<ol>\r\n</ol>\r\n","gallery":"[{\"type\":\"image\",\"url\":\"http://getfused.images.stage4.getfused.com/Homepage-4.png?w1282-h594-x419-y420\",\"title\":\"[Title] This slide has everything\",\"caption\":\"[Caption] Lorem ipsum dolor sit amet consectetur adipiscing elit aenean euismod.\",\"linkUrl\":\"Discover more\",\"linkText\":\"https://reddit.com\"},{\"type\":\"image\",\"url\":\"http://getfused.images.stage4.getfused.com/GF-Hero-New-Blog.png?w1280-h575-x307-y351\",\"caption\":\"[Caption] This slide has no title. Lorem ipsum dolor sit amet consectetur adipiscing elit aenean euismod.\",\"linkUrl\":\"Explore More\",\"linkText\":\"https://reddit.com\"},{\"type\":\"image\",\"url\":\"http://getfused.images.stage4.getfused.com/GF-Hero-New-Services.png?w823-h670-x1076-y95\",\"title\":\"[Title] This is a squarish image\",\"caption\":\"[Caption] This slide has no CTA. Lorem ipsum dolor sit amet consectetur adipiscing elit aenean euismod.\"},{\"type\":\"image\",\"url\":\"http://getfused.images.stage4.getfused.com/GF-Hero-New-Team.png?w863-h1027-x653-y20\",\"title\":\"[Title] This is a portrait image with no caption or CTA\"},{\"type\":\"image\",\"url\":\"http://getfused.images.stage4.getfused.com/GF-Hero-New-About.png?w1488-h703-x222-y377\"}]","isOriginService":1,"previewUrl":"","downloadLabel":"Download PDF","contentDefinitionTitle":"Headless Article","dateCreated":"2019-04-05P17:40:20Z","publishDate":"2019-04-05P17:40:00Z","abstract":"[Abstract] Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio.","serviceId":2,"contentStatusTitle":"Live","detailPageUrl":"","subtitle":"[Subtitle] sit amet consectetur","sourceName":"[Source Name]","lastModifiedBy":"gfplatform@getfused.com","overrideUrl":"","originalContentId":228,"_keywords":"","popNewWindow":0,"createdBy":"","sourceURL":"https://reddit.com","download":"http://getfused.files.stage4.getfused.com/file/Atest-EAA1.pdf","contentId":228,"videoURL":"https://www.youtube.com/watch?v=-oOlAGKBXnA","contentDefinitionName":"headlessArticle","lastModified":"2019-04-05P18:06:37Z","systemName":"","expireDate":"","type":"Press Coverage","thumbnailImage":"http://getfused.images.stage4.getfused.com/Headless-2-A.png?w262-h262-x35-y17","title":"[Title] Test Article 1 Lorem Ipsum Dolor","contentDefinitionId":34,"serviceName":"www","contentStatusId":1,"contentStatusName":"live"}],
+  "messages": []
 }
