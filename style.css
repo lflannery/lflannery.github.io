@@ -1,0 +1,224 @@
+/*
+*  html5resetcss
+*/
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
+body{line-height:1}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+nav ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:none}
+a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}
+ins{background-color:#ff9;color:#000;text-decoration:none}
+mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}
+del{text-decoration:line-through}
+abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
+table{border-collapse:collapse;border-spacing:0}
+hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
+input,select{vertical-align:middle}
+
+/*
+*  custom CSS
+*/
+
+/******** General ************/
+:root {
+    --blue: #345e84;
+    --light-blue: #d4e2fc;
+    --teal: #31728d;
+    --light-gray: #eef0f3;
+    --black: #000;
+    --white: #fff;
+  }
+.viewport {
+    max-width: 1440px;
+    margin: auto;
+    padding: 0 2rem;
+}
+body {
+    font: 400 18px 'Lato', sans-serif;
+    color: var(--black);
+}
+h1, h2, h3, h4 {
+    font: 500 3rem 'Roboto', sans-serif;
+    color: var(--blue);
+    margin-bottom: 1rem;
+}
+h2 {
+    font-size: 2.5rem;
+}
+h3 {
+    font-size: 2rem;
+    font-weight: 400;
+}
+h4 {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+main {
+    margin-top: -5rem;
+}
+.center {
+    text-align: center;
+}
+.max-width {
+    max-width: 680px;
+    margin: auto;
+}
+.panel {
+    padding: 4rem 2rem;
+}
+
+/******** Colums ************/
+.column {
+    padding: 2rem;
+    margin: 2rem;
+}
+.two-columns, .three-columns {
+    display: flex;
+    align-items: center;
+}
+.two-columns {
+    justify-content: center;
+}
+.two-columns .column:last-child {
+    flex: 0 0 40%;
+}
+
+/******** Header ************/
+header {
+    z-index: 1;
+    position: relative;
+}
+.header-wrapper { 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+}
+.header-wrapper nav {
+    justify-self: center;
+}
+.header-wrapper .linkedin {
+    justify-self: end;
+}
+.main-nav {
+    display: flex;
+    list-style: none;
+}
+.main-nav .menu-item {
+    padding: 0 1rem;
+}
+.main-nav .menu-item a {
+    color: var(--white);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    padding: 0.5rem 0;
+}
+.main-nav .menu-item a:hover {
+    border-bottom: 2px solid var(--white)
+}
+.logo {
+    width: 100%;
+    max-width: 150px;
+}
+.fa-linkedin-in:before {
+    color: var(--white);
+}
+.linkedin span {
+    display: none;
+}
+
+/******** Hero ************/
+.hero {
+    background-image: url(images/hero.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50vw;
+    position: relative;
+}
+.overlay {
+    background: var(--blue);
+    opacity: .5;
+    content: "";
+    display: block;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.hero-content {
+    max-width: 900px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    animation: fadeIn 3s;
+    -webkit-animation: fadeIn 3s;
+}
+.display-title {
+    font-size: 4rem;
+}
+.display-title, .hero-content p {
+    color: var(--white);
+}
+.hero-content p {
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+/******** Services ************/
+.services .column {
+    background: var(--blue);
+    color: var(--white);
+}
+.services .column h3 {
+    color: var(--white);
+}
+
+/******** About ************/
+.about {
+    background-image: url(images/about.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50vw;
+    position: relative;
+}
+.about img {
+    width: 100%;
+    max-width: 400px;
+}
+.about .content {
+    background: var(--white);
+ }
+
+/******** Footer ************/
+footer {
+    background: var(--blue);
+    height: 100px;
+    padding: 2rem 0;
+}
+.copyright {
+    font-size: .875rem;
+    color: var(--light-gray);
+}
+
+/******** Animations ************/
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
