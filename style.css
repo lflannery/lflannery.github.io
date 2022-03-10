@@ -32,7 +32,6 @@ input,select{vertical-align:middle}
 .viewport {
     max-width: 1440px;
     margin: auto;
-    padding: 0 2rem;
 }
 body {
     font: 400 18px 'Lato', sans-serif;
@@ -93,21 +92,23 @@ header {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
+    padding: 0 2rem;
 }
-.header-wrapper nav {
+nav.desktop {
     justify-self: center;
 }
 .header-wrapper .linkedin {
     justify-self: end;
 }
-.main-nav {
+.desktop .main-nav {
     display: flex;
     list-style: none;
 }
-.main-nav .menu-item {
+.desktop .main-nav .menu-item {
     padding: 0 1rem;
+    flex-shrink: 0;
 }
-.main-nav .menu-item a {
+.desktop .main-nav .menu-item a, .mobile .main-nav .menu-item a {
     color: var(--white);
     text-decoration: none;
     text-transform: uppercase;
@@ -115,8 +116,41 @@ header {
     font-weight: 500;
     padding: 0.5rem 0;
 }
-.main-nav .menu-item a:hover {
+.mobile .main-nav .menu-item a {
+    color: var(--blue);
+    display: block;
+}
+.desktop .main-nav .menu-item a:hover {
     border-bottom: 2px solid var(--white)
+}
+.mobile .main-nav .menu-item a:hover {
+    border-bottom: 2px solid var(--blue)
+}
+.mobile-menu, .mobile-menu.nav, .mobile-menu.close, .mobile-menu.trigger.hide {
+    display: none;
+}
+.mobile-menu.trigger, .mobile-menu.close {
+    justify-self: flex-end;
+    grid-column: 3/3;
+    position: relative;
+}
+.mobile-menu.nav {
+    position: absolute;
+    background: var(--white);
+    right: 2rem;
+    top: 70%;
+    padding: 1.5rem 1.5rem 1rem;
+}
+.mobile.linkedin {
+    padding: 0.5rem 0;
+    display: block;
+}
+.fa-bars:before {
+    color: var(--white);
+}
+.fa-square-xmark:before {
+    color: var(--white);
+    font-size: 2rem;
 }
 .logo {
     width: 100%;
@@ -124,6 +158,9 @@ header {
 }
 .fa-linkedin-in:before {
     color: var(--white);
+}
+.mobile-menu .fa-linkedin-in:before {
+    color: var(--blue);
 }
 .linkedin span {
     display: none;
@@ -191,7 +228,7 @@ header {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    height: 50vw;
+    height: 100%;
     position: relative;
 }
 .about img {
@@ -206,7 +243,7 @@ header {
 footer {
     background: var(--blue);
     height: 100px;
-    padding: 2rem 0;
+    padding: 2rem;
 }
 .copyright {
     font-size: .875rem;
@@ -221,4 +258,69 @@ footer {
     to {
       opacity: 1;
     }
-  }
+}
+
+/******** Media Queries ************/
+
+@media screen and (max-width: 950px) {
+    .hero-content {
+        max-width: 700px;
+        width: 100%;
+    }
+    .display-title {
+        font-size: 3rem;
+    }
+    .column {
+        margin: 2rem 1rem;
+    }
+}
+@media screen and (max-width: 850px) {
+    .hero {
+        background-position: center -8rem;
+    }
+    .three-columns {
+        display: block;
+    }
+    .two-columns .column {
+        margin: 0;
+    }
+    .two-columns .column:last-child {
+        flex: 0 0 45%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .two-columns {
+        display: block;
+    }
+    .about img {
+        max-width: 300px;
+        margin: auto;
+        display: block;
+    }
+}
+@media screen and (max-width: 650px) {
+    .mobile-menu, .mobile-menu.nav.expanded, .mobile-menu.close.expanded {
+        display: block;
+        animation: fadeIn 3s;
+    }
+    nav.desktop, .desktop.linkedin {
+        display: none;
+    }
+    .hero {
+        height: 60vw;
+    }
+    .hero-content {
+        max-width: 500px;
+    }
+    .display-title {
+        font-size: 2rem;
+    }
+}
+@media screen and (max-width: 500px) {
+    .hero {
+        height: 100vw;
+    }
+    .hero-content {
+        max-width: 300px;
+    }
+}

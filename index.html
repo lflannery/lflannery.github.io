@@ -17,8 +17,8 @@
                 <!-- Logo -->
                 <a href="/" >
                     <img src="images/logo.svg" class="logo" alt="SecureWon"></a>
-                <!-- Main Nav -->
-                <nav aria-label="Global">
+                <!-- Desktop Nav -->
+                <nav class="desktop aria-label="Global">
                     <ul class="main-nav">
                         <li class="menu-item"><a href="#services">Services</a></li>
                         <li class="menu-item"><a href="#about">About Us</a></li>
@@ -26,7 +26,20 @@
                     </ul>
                 </nav>
                 <!-- Social -->
-                <a class="linkedin" href="https://www.linkedin.com/feed/"><i class="fa-brands fa-linkedin-in"></i><span>Folow us on LinkedIn</span></a>
+                <a class="desktop linkedin" href="https://www.linkedin.com/feed/"><i class="fa-brands fa-linkedin-in"></i><span>Folow us on LinkedIn</span></a>
+                <!-- Mobile Nav -->
+                <div class="mobile-menu trigger"><i class="fa-solid fa-bars"></i></div>
+                <div class="mobile-menu close"><i class="fa-solid fa-square-xmark"></i></div>
+                <div class="mobile-menu nav">
+                    <nav class="mobile" aria-label="Global">
+                        <ul class="main-nav">
+                            <li class="menu-item"><a href="#services">Services</a></li>
+                            <li class="menu-item"><a href="#about">About Us</a></li>
+                            <li class="menu-item"><a href="#contact">Contact Us</a></li>
+                        </ul>
+                    </nav>
+                    <a class="mobile linkedin" href="https://www.linkedin.com/feed/"><i class="fa-brands fa-linkedin-in"></i><span>Folow us on LinkedIn</span></a>
+                </div>
             </div>
         </header>
         <main>
@@ -82,7 +95,9 @@
                 <div class="copyright">&#169; <span id="year"></span> All rights reserved.</div>
             </div>
         </footer>
-        <script src="scripts.js" async defer></script>
         <script src="https://kit.fontawesome.com/e4e6af0a8c.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="scripts.js" async defer></script>
+        
     </body>
 </html>
