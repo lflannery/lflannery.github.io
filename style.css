@@ -377,7 +377,7 @@ label::after {
 .services .column {
     background: var(--blue);
     color: var(--white);
-    flex: 0 0 24.5%;
+    flex: 0 1 24.5%;
 }
 .services .column h3 {
     color: var(--white);
