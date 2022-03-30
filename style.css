@@ -465,6 +465,10 @@ footer a {
     .column {
         margin: 2rem 1rem;
     }
+    .about {
+        background-attachment: initial;
+        background-position: center;
+    }
 }
 @media screen and (max-width: 850px) {
     .three-columns {
