@@ -102,8 +102,11 @@ main {
 
 /******** Header ************/
 header {
+    position: fixed;
     z-index: 1;
-    position: relative;
+    top:0;
+    left:0;
+    width: 100%;
     transition: .2s all;
     -webkit-transition: .2s all;
     -moz-transition: .2s all;
@@ -117,11 +120,6 @@ header {
     padding: 0 2rem;
 }
 .fixed {
-    position: fixed;
-    top:0;
-    left:0;
-    z-index: 5;
-    width: 100%;
     background: var(--white);
     box-shadow: 0 5px 10px 0 var(--light-gray);
 }
@@ -410,14 +408,26 @@ label::after {
 /******** Footer ************/
 footer {
     background: var(--blue);
-    height: 100px;
     padding: 2rem;
-    text-align: center;
+    color: var(--white);
+}
+footer .viewport {
+    display: flex;
+    justify-content: space-between;
 }
 footer a {
     display: block;
     margin: 0.5rem 0;
     color: var(--white);
+    font-size: 1rem;
+}
+.address span {
+    display: block;
+    font-size: 1rem;
+}
+.right {
+    align-self: flex-end;
+    text-align: right;
 }
 .copyright {
     font-size: .875rem;
@@ -437,9 +447,13 @@ footer a {
 /******** Media Queries ************/
 
 @media screen and (max-width: 950px) {
+    .hero {
+        height: 66vw;
+    }
     .hero-content {
         max-width: 700px;
         width: 100%;
+        top: 55%;
     }
     .display-title {
         font-size: 3rem;
@@ -450,7 +464,7 @@ footer a {
 }
 @media screen and (max-width: 850px) {
     .hero {
-        background-position: center -8rem;
+        background-position: center -10rem;
     }
     .three-columns {
         display: block;
@@ -480,7 +494,7 @@ footer a {
         display: none;
     }
     .hero {
-        height: 60vw;
+        height: 75vh;
     }
     .hero-content {
         max-width: 500px;
@@ -490,10 +504,15 @@ footer a {
     }
 }
 @media screen and (max-width: 500px) {
-    .hero {
-        height: 100vw;
-    }
     .hero-content {
         max-width: 300px;
+    }
+    footer .viewport {
+        display: block;
+        text-align: center;
+    }
+    .right {
+        text-align: center;
+        margin-top: 3rem;
     }
 }
