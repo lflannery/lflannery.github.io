@@ -326,6 +326,9 @@ label::after {
 }
 
 /******** Hero ************/
+.hero-wrapper {
+    position: relative;
+}
 .hero {
     background-image: url(images/hero.jpg);
     background-size: cover;
@@ -333,9 +336,8 @@ label::after {
     background-position: center;
     background-repeat: no-repeat;
     height: 50vw;
-    position: relative;
 }
-.overlay {
+.hero:before {
     background: var(--blue);
     opacity: .5;
     content: "";
@@ -449,6 +451,8 @@ footer a {
 @media screen and (max-width: 950px) {
     .hero {
         height: 66vw;
+        background-attachment: initial;
+        background-position: center;
     }
     .hero-content {
         max-width: 700px;
@@ -463,9 +467,6 @@ footer a {
     }
 }
 @media screen and (max-width: 850px) {
-    .hero {
-        background-position: center -10rem;
-    }
     .three-columns {
         display: block;
     }
